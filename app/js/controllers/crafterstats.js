@@ -159,6 +159,11 @@
           // If we care about successRate and the successRate is too low, skip it.
           if (bySuccessRate && action.successProbability < 1) continue;
 
+          // Consider moves that require particular state to not be guarnteed also
+          if (bySuccessRate && action.onGood) continue;
+          if (bySuccessRate && action.onExcellent) continue;
+          if (bySuccessRate && action.onPoor) continue;
+
           // Some actions are upgraded versions of others.  
           // If this is one of the base versions and our level is high enough to use the upgraded version, skip it.
           if (action.shortName === "rapidSynthesis" && $scope.crafter.stats[actionClass].level >= 63) continue;
