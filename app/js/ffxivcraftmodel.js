@@ -318,7 +318,6 @@ function ApplyModifiers(s, action, condition) {
     }
 
     if (AllActions.veneration.shortName in s.effects.countDowns) {
-        debugger
         progressIncreaseMultiplier += 0.5;
     }
 
