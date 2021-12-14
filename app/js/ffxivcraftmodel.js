@@ -1308,11 +1308,12 @@ function evalSeq(individual, mySynth, penaltyWeight, qualityPercentTarget) {
     var fitnessCpRem = result.cpState
     var fitnessPenalties = -penalties
     var fitnessTime = -totalTime
+    var fitnessCpBreak = result.cpState < 0 ? result.cpState : 0;
 
-    return [fitnessProg, fitnessQual, fitnessLength, fitnessTime, fitnessWasted, fitnessPenalties, fitnessCpRem];
+    return [fitnessCpBreak, fitnessProg, fitnessQual, fitnessLength, fitnessTime, fitnessWasted, fitnessPenalties, fitnessCpRem];
 }
 
-evalSeq.weights = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0];
+evalSeq.weights = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0];
 
 function heuristicSequenceBuilder(synth) {
     var sequence = [];
