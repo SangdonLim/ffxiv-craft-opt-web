@@ -68,6 +68,7 @@ var AllActions = {
     delicateSynthesis: new Action(  'delicateSynthesis',    'Delicate Synthesis',   10,     32,  1.0, 1.0, 1.0, 'immediate',   1,  'All',          76),
     intensiveSynthesis: new Action( 'intensiveSynthesis',   'Intensive Synthesis',  10,     6,  1.0, 0.0, 4.0, 'immediate',   1,  'All',          78,  true,       true),
     trainedEye: new Action(         'trainedEye',           'Trained Eye',          10,    250,  1.0, 0.0, 0.0, 'immediate',   1,  'All',          80),
+    trainedFinesse: new Action(     'trainedFinesse',       'Trained Finesse',       0,     32,  1.0, 1.0, 0.0, 'immediate',   1,  'All',          90),
 
     // Special Actions - not selectable
     dummyAction: new Action(        'dummyAction',          '______________',        0,      0,  1.0, 0.0, 0.0, 'immediate',   1,  'All',           1)

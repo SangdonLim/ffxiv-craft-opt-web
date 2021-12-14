@@ -51,6 +51,7 @@
     trainedEye: {              common: true,             skillID: {"Alchemist": 100289, "Armorer": 100285, "Blacksmith": 100284, "Carpenter": 100283, "Culinarian": 100290, "Goldsmith": 100286, "Leatherworker": 100287, "Weaver": 100288} },
 
     observe: {                 common: true,             skillID: {"Alchemist": 100099, "Armorer": 100040, "Blacksmith": 100023, "Carpenter": 100010, "Culinarian": 100113, "Goldsmith": 100082, "Leatherworker": 100053, "Weaver": 100070} },
+    trainedFinesse: {          common: true,             skillID: {"Alchemist": 1997} },
   };
 
   var obsoleteActions = {
@@ -142,7 +143,8 @@
         "prudentTouch",
         "focusedTouch",
         "preparatoryTouch",
-        "advancedTouch"
+        "advancedTouch",
+        "trainedFinesse"
       ]
     },
     {

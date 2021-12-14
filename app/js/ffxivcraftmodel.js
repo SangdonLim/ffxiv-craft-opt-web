@@ -295,6 +295,13 @@ function ApplyModifiers(s, action, condition) {
         }
     }
 
+    if (isActionEq(action, AllActions.trainedFinesse)) {
+        if (s.effects.countUps['innerQuiet'] !== 10) {
+            s.wastedActions += 1;
+            actionQuality = 0;
+        }
+    }
+
     // Effects modifying durability cost
     var durabilityCost = action.durabilityCost;
     if ((AllActions.wasteNot.shortName in s.effects.countDowns) || (AllActions.wasteNot2.shortName in s.effects.countDowns)) {
