@@ -60,6 +60,7 @@
     function actionTableClasses(action, cls) {
       return {
         'action-no-cp': $scope.simulatorStatus.state &&
+                        _actionsByName[action] &&
                         (_actionsByName[action].cpCost > $scope.simulatorStatus.state.cp),
         'faded-icon': !isActionSelected(action)
       };
