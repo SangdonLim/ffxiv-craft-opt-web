@@ -433,6 +433,7 @@
       $scope.solver = {
         algorithm: 'eaSimple',
         penaltyWeight: 10000,
+        qualityPercentTarget: 120,
         population: 300,
         generations: 100
       };

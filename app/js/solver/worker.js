@@ -83,6 +83,7 @@ Settings:\n\
   Population: %d\n\
   Generations: %d\n\
   Penalty Weight: %d\n\
+  Quality Target : %d%\n\
 \n".sprintf(
     seed,
     settings.recipe.cls,
@@ -102,7 +103,8 @@ Settings:\n\
     settings.algorithm,
     settings.solver.population,
     settings.solver.generations,
-    settings.solver.penaltyWeight
+    settings.solver.penaltyWeight,
+    settings.solver.qualityPercentTarget || 120
   ));
 
   for (var i = 0; i < settings.crafter.actions.length; i++) {
@@ -197,8 +199,8 @@ Settings:\n\
 
   var seqMaxLength = Math.max(50, sequence.length);
 
-  function evalSeqWrapper(synth, penaltyWeight, individual) {
-    return evalSeq(individual, synth, penaltyWeight);
+  function evalSeqWrapper(synth, penaltyWeight, qualPerTarget, individual) {
+    return evalSeq(individual, synth, penaltyWeight, qualPerTarget);
   }
 
   var creator = new yagal_creator.Creator();
@@ -211,7 +213,7 @@ Settings:\n\
   toolbox.register("randomLength", randomInt, seqMaxLength);
   toolbox.register("individual", yagal_tools.initRepeat, creator.Individual, toolbox.randomAction, toolbox.randomLength);
   toolbox.register("population", yagal_tools.initRepeat, Array, toolbox.individual);
-  toolbox.register("evaluate", evalSeqWrapper, synth, settings.solver.penaltyWeight);
+  toolbox.register("evaluate", evalSeqWrapper, synth, settings.solver.penaltyWeight, settings.solver.qualityPercentTarget);
 
   var pop = toolbox.population(settings.solver.population-1);
   var iniGuess = creator.Individual.apply(null, sequence);
@@ -267,7 +269,7 @@ function runOneGen() {
   state.pop = state.algorithm.gen(state.pop, state.toolbox, state.hof);
 
   if (state.settings.debug) {
-    var fitness = evalSeq(state.hof.entries[0], state.synth, state.settings.penaltyWeight);
+    var fitness = evalSeq(state.hof.entries[0], state.synth, state.settings.penaltyWeight, state.settings.qualityPercentTarget);
     var popDiversity = calcPopDiversity(state.pop);
     state.logOutput.write('%d: best fitness=[%s]  pop diversity=[%s]\n'.sprintf(state.gen, numArrayToString(fitness), numArrayToString(popDiversity)));
   }
