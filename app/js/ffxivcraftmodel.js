@@ -473,7 +473,7 @@ function ApplySpecialActionEffects(s, action, condition) {
 
 }
 
-function UpdateEffectCounters(s, action, condition, successProbability) {
+function UpdateEffectCounters(s, action, condition, successProbability, qualityGain) {
     // STEP_03
     // Countdown / Countup Management
     //===============================
@@ -487,7 +487,7 @@ function UpdateEffectCounters(s, action, condition, successProbability) {
     }
 
     // Increment all other inner quiet count ups
-    if (action.qualityIncreaseMultiplier > 0 && !isActionEq(action, AllActions.byregotsBlessing)) {
+    if (qualityGain > 0 && !isActionEq(action, AllActions.byregotsBlessing)) {
         s.effects.countUps['innerQuiet'] = (s.effects.countUps['innerQuiet'] || 0) + 1 * successProbability;
     }
 
@@ -542,7 +542,7 @@ function UpdateState(s, action, progressGain, qualityGain, durabilityCost, cpCos
     s.lastStep += 1;
 
     ApplySpecialActionEffects(s, action, condition);
-    UpdateEffectCounters(s, action, condition, successProbability);
+    UpdateEffectCounters(s, action, condition, successProbability, qualityGain);
 
     // Sanity checks for state variables
     if ((s.durabilityState >= -5) && (s.progressState >= s.synth.recipe.difficulty)) {
