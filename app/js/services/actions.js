@@ -19,8 +19,8 @@
     rapidSynthesis: {          common: true,             skillID: {"Armorer": 100033} },
     basicTouch: {                                        skillID: {"Alchemist": 100091, "Armorer": 100031, "Blacksmith": 100016, "Carpenter": 100002, "Culinarian": 100106, "Goldsmith": 100076, "Leatherworker": 100046, "Weaver": 100061} },
     standardTouch: {                                     skillID: {"Alchemist": 100093, "Armorer": 100034, "Blacksmith": 100018, "Carpenter": 100004, "Culinarian": 100109, "Goldsmith": 100078, "Leatherworker": 100048, "Weaver": 100064} },
-    advancedTouch: {           common: true,             skillID: {"Alchemist": 100095} },
-    prudentSynthesis: {        common: true,             skillID: {"Alchemist": 100097} },
+    advancedTouch: {                                     skillID: {"Alchemist": 100095} },
+    prudentSynthesis: {                                  skillID: {"Alchemist": 100097} },
     hastyTouch: {              common: true,             skillID: {"Culinarian": 100108} },
     byregotsBlessing: {        common: true,             skillID: {"Alchemist": 0, "Armorer": 0, "Blacksmith": 0, "Carpenter": 0, "Culinarian": 0, "Goldsmith": 0, "Leatherworker": 0, "Weaver": 0} },
     mastersMend: {             common: true,             skillID: {"Alchemist": 100092, "Armorer": 100032, "Blacksmith": 100017, "Carpenter": 100003, "Culinarian": 100107, "Goldsmith": 100077, "Leatherworker": 100047, "Weaver": 100062} },
@@ -51,6 +51,7 @@
     trainedEye: {              common: true,             skillID: {"Alchemist": 100289, "Armorer": 100285, "Blacksmith": 100284, "Carpenter": 100283, "Culinarian": 100290, "Goldsmith": 100286, "Leatherworker": 100287, "Weaver": 100288} },
 
     observe: {                 common: true,             skillID: {"Alchemist": 100099, "Armorer": 100040, "Blacksmith": 100023, "Carpenter": 100010, "Culinarian": 100113, "Goldsmith": 100082, "Leatherworker": 100053, "Weaver": 100070} },
+    trainedFinesse: {          common: true,             skillID: {"Alchemist": 1997} },
   };
 
   var obsoleteActions = {
@@ -142,7 +143,8 @@
         "prudentTouch",
         "focusedTouch",
         "preparatoryTouch",
-        "advancedTouch"
+        "advancedTouch",
+        "trainedFinesse"
       ]
     },
     {
