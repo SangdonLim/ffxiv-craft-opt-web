@@ -99,7 +99,7 @@ function EffectTracker() {
     this.indefinites = {};
 }
 
-function State(synth, step, lastStep, action, durabilityState, cpState, bonusMaxCp, qualityState, progressState, wastedActions, trickUses, reliability, effects, condition, touchCombo) {
+function State(synth, step, lastStep, action, durabilityState, cpState, bonusMaxCp, qualityState, progressState, wastedActions, trickUses, buffUses, reliability, effects, condition, touchCombo) {
     this.synth = synth;
     this.step = step;
     this.lastStep = lastStep;
@@ -111,6 +111,7 @@ function State(synth, step, lastStep, action, durabilityState, cpState, bonusMax
     this.progressState = progressState;
     this.wastedActions = wastedActions;
     this.trickUses = trickUses;
+    this.buffUses = buffUses;
     this.reliability = reliability;
     this.effects = effects;
     this.condition =  condition;
@@ -126,7 +127,7 @@ function State(synth, step, lastStep, action, durabilityState, cpState, bonusMax
 }
 
 State.prototype.clone = function () {
-    return new State(this.synth, this.step, this.lastStep, this.action, this.durabilityState, this.cpState, this.bonusMaxCp, this.qualityState, this.progressState, this.wastedActions, this.trickUses, this.reliability, clone(this.effects), this.condition, this.touchCombo);
+    return new State(this.synth, this.step, this.lastStep, this.action, this.durabilityState, this.cpState, this.bonusMaxCp, this.qualityState, this.progressState, this.wastedActions, this.trickUses, this.buffUses, this.reliability, clone(this.effects), this.condition, this.touchCombo);
 };
 
 State.prototype.checkViolations = function () {
@@ -177,11 +178,12 @@ function NewStateFromSynth(synth) {
     var progressState = 0;
     var wastedActions = 0;
     var trickUses = 0;
+    var buffUses = 0;
     var reliability = 1;
     var effects = new EffectTracker();
     var condition = 'Normal';
 
-    return new State(synth, step, lastStep, '', durabilityState, cpState, bonusMaxCp, qualityState, progressState, wastedActions, trickUses, reliability, effects, condition);
+    return new State(synth, step, lastStep, '', durabilityState, cpState, bonusMaxCp, qualityState, progressState, wastedActions, trickUses, buffUses, reliability, effects, condition);
 }
 
 function probGoodForSynth(synth) {
@@ -473,6 +475,10 @@ function ApplySpecialActionEffects(s, action, condition) {
     }
     if (isActionEq(action, AllActions.innovation.shortName) && (AllActions.innovation.shortName in s.effects.countDowns)) {
         s.wastedActions += 1
+    }
+
+    if (action.isBuff) {
+        s.buffUses += 1
     }
 
 }
@@ -817,12 +823,14 @@ function MonteCarloStep(startState, action, assumeSuccess, verbose, debug, logOu
     s.bProgressGain = Math.floor(r.bProgressGain);
     s.bQualityGain = Math.floor(r.bQualityGain);
     s.success = success;
+    
+    var time = s.step *3 - s.buffUses;
 
     if (debug) {
-        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %5.0f %5.0f %5.0f %5.0f %5.0f %-10s %5.0f', s.step, action.name, s.durabilityState, s.cpState, s.qualityState, s.progressState, s.iqCnt, s.control, s.qualityGain, s.bProgressGain, s.bQualityGain, s.wastedActions, s.condition, s.success);
+        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %5.0f %5.0f %5.0f %5.0f %5.0f %-10s %5.0f %5d', s.step, action.name, s.durabilityState, s.cpState, s.qualityState, s.progressState, s.iqCnt, s.control, s.qualityGain, s.bProgressGain, s.bQualityGain, s.wastedActions, s.condition, s.success, time);
     }
     else if (verbose) {
-        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %-10s %-5s', s.step, action.name, s.durabilityState, s.cpState, s.qualityState, s.progressState, s.iqCnt, s.condition, s.success);
+        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %-10s %-5s %5d', s.step, action.name, s.durabilityState, s.cpState, s.qualityState, s.progressState, s.iqCnt, s.condition, s.success, time);
     }
 
     // Return final state
@@ -882,13 +890,15 @@ function MonteCarloSequence(individual, startState, assumeSuccess, conditionalAc
         individual = tempIndividual;
     }
 
+    var time = s.step *3 - s.buffUses;
+
     if (debug) {
-        logger.log('%-2s %30s %-5s %-5s %-8s %-8s %-5s %-5s %-5s %-5s %-5s %-5s %-10s %-5s', '#', 'Action', 'DUR', 'CP', 'QUA', 'PRG', 'IQ', 'CTL', 'QINC', 'BPRG', 'BQUA', 'WAC', 'Cond', 'S/F');
-        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %5.0f %5.0f %5.0f %5.0f %5.0f %-10s %5.0f', s.step, '', s.durabilityState, s.cpState, s.qualityState, s.progressState, 0, s.synth.crafter.control, 0, 0, 0, 0, 'Normal', '');
+        logger.log('%-2s %30s %-5s %-5s %-8s %-8s %-5s %-5s %-5s %-5s %-5s %-5s %-10s %-5s %-5s', '#', 'Action', 'DUR', 'CP', 'QUA', 'PRG', 'IQ', 'CTL', 'QINC', 'BPRG', 'BQUA', 'WAC', 'Cond', 'S/F', 'Wait');
+        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %5.0f %5.0f %5.0f %5.0f %5.0f %-10s %5.0f %5d', s.step, '', s.durabilityState, s.cpState, s.qualityState, s.progressState, 0, s.synth.crafter.control, 0, 0, 0, 0, 'Normal', '', time);
     }
     else if (verbose) {
-        logger.log('%-2s %30s %-5s %-5s %-8s %-8s %-5s %-10s %-5s', '#', 'Action', 'DUR', 'CP', 'QUA', 'PRG', 'IQ', 'Cond', 'S/F');
-        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %-10s %5.0f', s.step, '', s.durabilityState, s.cpState, s.qualityState, s.progressState, 0, 'Normal', 0);
+        logger.log('%-2s %30s %-5s %-5s %-8s %-8s %-5s %-10s %-5s %-5s', '#', 'Action', 'DUR', 'CP', 'QUA', 'PRG', 'IQ', 'Cond', 'S/F', 'Wait');
+        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %-10s %5.0f %5d', s.step, '', s.durabilityState, s.cpState, s.qualityState, s.progressState, 0, 'Normal', 0, time);
 
     }
 
@@ -1080,26 +1090,28 @@ function MonteCarloSim(individual, synth, nRuns, assumeSuccess, conditionalActio
 
     logger.log("Monte Carlo Best Example");
     logger.log("==========================");
-    logger.log('%-2s %30s %-5s %-5s %-8s %-8s %-5s %-5s %-5s %-5s %-5s %-5s %-10s %-5s', '#', 'Action', 'DUR', 'CP', 'QUA', 'PRG', 'IQ', 'CTL', 'QINC', 'BPRG', 'BQUA', 'WAC', 'Cond', 'S/F');
+    logger.log('%-2s %30s %-5s %-5s %-8s %-8s %-5s %-5s %-5s %-5s %-5s %-5s %-10s %-5s %-5s', '#', 'Action', 'DUR', 'CP', 'QUA', 'PRG', 'IQ', 'CTL', 'QINC', 'BPRG', 'BQUA', 'WAC', 'Cond', 'S/F', 'Wait');
 
     for (var i = 0; i < bestSequenceStates.length; i++) {
         var s = bestSequenceStates[i];
         var action = AllActions[s.action];
         var actionName = action ? action.name : '';
-        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %5.0f %5.0f %5.0f %5.0f %5.0f %-10s %5.0f', s.step, actionName, s.durabilityState, s.cpState, s.qualityState, s.progressState, s.iqCnt, s.control, s.qualityGain, s.bProgressGain, s.bQualityGain, s.wastedActions, s.condition, s.success);
+        var time = s.step *3 - s.buffUses;
+        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %5.0f %5.0f %5.0f %5.0f %5.0f %-10s %5.0f %5d', s.step, actionName, s.durabilityState, s.cpState, s.qualityState, s.progressState, s.iqCnt, s.control, s.qualityGain, s.bProgressGain, s.bQualityGain, s.wastedActions, s.condition, s.success, time);
     }
 
     logger.log('');
 
     logger.log("Monte Carlo Worst Example");
     logger.log("==========================");
-    logger.log('%-2s %30s %-5s %-5s %-8s %-8s %-5s %-5s %-5s %-5s %-5s %-5s %-10s %-5s', '#', 'Action', 'DUR', 'CP', 'QUA', 'PRG', 'IQ', 'CTL', 'QINC', 'BPRG', 'BQUA', 'WAC', 'Cond', 'S/F');
+    logger.log('%-2s %30s %-5s %-5s %-8s %-8s %-5s %-5s %-5s %-5s %-5s %-5s %-10s %-5s %-5s', '#', 'Action', 'DUR', 'CP', 'QUA', 'PRG', 'IQ', 'CTL', 'QINC', 'BPRG', 'BQUA', 'WAC', 'Cond', 'S/F', 'Wait');
 
     for (var i = 0; i < worseSequenceStates.length; i++) {
         var s = worseSequenceStates[i];
         var action = AllActions[s.action];
         var actionName = action ? action.name : '';
-        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %5.0f %5.0f %5.0f %5.0f %5.0f %-10s %5.0f', s.step, actionName, s.durabilityState, s.cpState, s.qualityState, s.progressState, s.iqCnt, s.control, s.qualityGain, s.bProgressGain, s.bQualityGain, s.wastedActions, s.condition, s.success);
+        var time = s.step *3 - s.buffUses;
+        logger.log('%2d %30s %5.0f %5.0f %8.0f %8.0f %5.0f %5.0f %5.0f %5.0f %5.0f %5.0f %-10s %5.0f %5d', s.step, actionName, s.durabilityState, s.cpState, s.qualityState, s.progressState, s.iqCnt, s.control, s.qualityGain, s.bProgressGain, s.bQualityGain, s.wastedActions, s.condition, s.success, time);
     }
 
     logger.log('');
@@ -1287,17 +1299,20 @@ function evalSeq(individual, mySynth, penaltyWeight, qualityPercentTarget) {
         }
     }
 
+    var totalTime = individual.length * 3 - result.buffUses
+
     var fitnessProg = Math.min(mySynth.recipe.difficulty, result.progressState);
     var fitnessQual = Math.min(mySynth.recipe.maxQuality * (qualityPercentTarget / 100), result.qualityState);
     var fitnessWasted = -result.wastedActions
-    var fitnessLength = -individual.length
+    var fitnessLength = -(Math.floor(individual.length / 15))
     var fitnessCpRem = result.cpState
     var fitnessPenalties = -penalties
+    var fitnessTime = -totalTime
 
-    return [fitnessProg, fitnessQual, fitnessLength, fitnessWasted, fitnessPenalties, fitnessCpRem];
+    return [fitnessProg, fitnessQual, fitnessLength, fitnessTime, fitnessWasted, fitnessPenalties, fitnessCpRem];
 }
 
-evalSeq.weights = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0];
+evalSeq.weights = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0];
 
 function heuristicSequenceBuilder(synth) {
     var sequence = [];
