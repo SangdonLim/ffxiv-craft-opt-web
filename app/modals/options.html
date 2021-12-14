@@ -179,6 +179,15 @@
                 </div>
               </div>
 
+              <div class="control-group" ng-class="{error: solverOptionsForm.qualityPercentTarget.$invalid}">
+                <label class="control-label">Quality Target %</label>
+
+                <div class="controls">
+                  <input class="input-small" type="number" name="qualityPercentTarget" ng-model="solver.qualityPercentTarget" min="100" max="9999" required
+                         tooltip-placement="left"/>
+                </div>
+              </div>
+
             </div>
           </div>
 

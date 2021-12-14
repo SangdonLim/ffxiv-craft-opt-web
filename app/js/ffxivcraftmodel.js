@@ -1252,8 +1252,9 @@ function hqPercentFromQuality(qualityPercent) {
     ][Math.min(100, Math.floor(qualityPercent))]
 }
 
-function evalSeq(individual, mySynth, penaltyWeight) {
+function evalSeq(individual, mySynth, penaltyWeight, qualityPercentTarget) {
     penaltyWeight = penaltyWeight!== undefined ? penaltyWeight : 10000;
+    qualityPercentTarget = qualityPercentTarget !== undefined ? qualityPercentTarget : 120;
 
     var startState = NewStateFromSynth(mySynth);
 
