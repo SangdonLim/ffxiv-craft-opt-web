@@ -1260,21 +1260,12 @@ function evalSeq(individual, mySynth, penaltyWeight, qualityPercentTarget) {
 
     var result = simSynth(individual, startState, false, false, false);
     var penalties = 0;
-    var fitness = 0;
-    var fitnessProg = 0;
-
-    // Sum the constraint violations
-    penalties += result.wastedActions / 100;
 
     // Check for feasibility violations
     var chk = result.checkViolations();
 
     if (!chk.durabilityOk) {
        penalties += Math.abs(result.durabilityState);
-    }
-
-    if (!chk.progressOk) {
-        penalties += Math.abs(mySynth.recipe.difficulty - Math.min(result.progressState, mySynth.recipe.difficulty));
     }
 
     if (!chk.cpOk) {
@@ -1296,14 +1287,17 @@ function evalSeq(individual, mySynth, penaltyWeight, qualityPercentTarget) {
         }
     }
 
-    fitness += result.qualityState;
-    fitness -= penaltyWeight * penalties;
-    fitnessProg += result.progressState;
+    var fitnessProg = Math.min(mySynth.recipe.difficulty, result.progressState);
+    var fitnessQual = Math.min(mySynth.recipe.maxQuality * (qualityPercentTarget / 100), result.qualityState);
+    var fitnessWasted = -result.wastedActions
+    var fitnessLength = -individual.length
+    var fitnessCpRem = result.cpState
+    var fitnessPenalties = -penalties
 
-    return [fitness, fitnessProg, result.cpState, individual.length];
+    return [fitnessProg, fitnessQual, fitnessLength, fitnessWasted, fitnessPenalties, fitnessCpRem];
 }
 
-evalSeq.weights = [1.0, 1.0, 1.0, -1.0];
+evalSeq.weights = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0];
 
 function heuristicSequenceBuilder(synth) {
     var sequence = [];
@@ -1590,5 +1584,5 @@ var actionSequence = [innerQuiet, steadyHand, wasteNot, basicSynth, hastyTouch, 
 simSynth(actionSequence, mySynth, false, true);
 MonteCarloSynth(actionSequence, mySynth, false, true);
 MonteCarloSim(actionSequence, mySynth, 500);
-evalSeq(actionSequence, mySynth);
+evalSeq(actionSequence, mySynth, 120);
 */
