@@ -252,9 +252,13 @@ function ApplyModifiers(s, action, condition) {
 
     // Effects modfiying probability
     var successProbability = action.successProbability;
-    if (isActionEq(action, AllActions.focusedSynthesis) || isActionEq(action, AllActions.focusedTouch)) {
-        if (s.action === AllActions.observe.shortName) {
+    if (s.action === AllActions.observe.shortName) {
+        if (isActionEq(action, AllActions.focusedSynthesis) || isActionEq(action, AllActions.focusedTouch)) {
             successProbability = 1.0;
+        }
+        else
+        {
+            s.wastedActions += 1;
         }
     }
     successProbability = Math.min(successProbability, 1);
