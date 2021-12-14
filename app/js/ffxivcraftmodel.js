@@ -1239,25 +1239,13 @@ function getMaxProperty(stateArray, propName) {
     return maxProperty;
 }
 
-function qualityFromHqPercent(hqPercent) {
-    var x = hqPercent;
-    return -5.6604E-6 * Math.pow(x, 4) + 0.0015369705 * Math.pow(x, 3) - 0.1426469573 * Math.pow(x, 2) + 5.6122722959 * x - 5.5950384565;
-}
-
 function hqPercentFromQuality(qualityPercent) {
-    var hqPercent = 1;
-    if (qualityPercent === 0) {
-        hqPercent = 1;
-    }
-    else if (qualityPercent >= 100) {
-        hqPercent = 100;
-    }
-    else {
-        while (qualityFromHqPercent(hqPercent) < qualityPercent && hqPercent < 100) {
-            hqPercent += 1;
-        }
-    }
-    return hqPercent;
+    return [
+        1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8,
+        9, 9, 9, 10, 10, 10, 11, 11, 11, 12, 12, 12, 13, 13, 13, 14, 14, 14, 15, 15, 15, 16, 16, 17,
+        17, 17, 18, 18, 18, 19, 19, 20, 20, 21, 22, 23, 24, 26, 28, 31, 34, 38, 42, 47, 52, 58, 64, 68,
+        71, 74, 76, 78, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 94, 96, 98, 100,
+    ][Math.min(100, Math.floor(qualityPercent))]
 }
 
 function evalSeq(individual, mySynth, penaltyWeight) {
