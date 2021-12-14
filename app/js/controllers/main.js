@@ -425,17 +425,17 @@
         specifySeed: false,
         seed: 1337,
         monteCarloMode: 'macro',
-        useConditions: true,
+        useConditions: false,
         conditionalActionHandling: 'skipUnusable',
         debug: false
       };
 
       $scope.solver = {
-        algorithm: 'eaSimple',
+        algorithm: 'eaComplex',
         penaltyWeight: 10000,
         qualityPercentTarget: 120,
-        population: 300,
-        generations: 100
+        population: 1000,
+        generations: 500
       };
 
       $scope.macroOptions = {
