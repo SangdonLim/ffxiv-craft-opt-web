@@ -1,6 +1,30 @@
 [
   {
     "control_percent": 2,
+    "control_value": 40,
+    "hq": false,
+    "id": "95ea832259a",
+    "name": {
+      "de": "Fachkenntnis-Kräuterwein",
+      "en": "Commanding Craftsman's Draught",
+      "fr": "Potion spiritueuse de maîtrise",
+      "ja": "巨匠の薬酒"
+    }
+  },
+  {
+    "control_percent": 3,
+    "control_value": 50,
+    "hq": true,
+    "id": "95ea832259a",
+    "name": {
+      "de": "Fachkenntnis-Kräuterwein",
+      "en": "Commanding Craftsman's Draught",
+      "fr": "Potion spiritueuse de maîtrise",
+      "ja": "巨匠の薬酒"
+    }
+  },
+  {
+    "control_percent": 2,
     "control_value": 34,
     "hq": false,
     "id": "99c8f8f8de2",
@@ -49,6 +73,30 @@
   },
   {
     "craftsmanship_percent": 2,
+    "craftsmanship_value": 40,
+    "hq": false,
+    "id": "f7bfd7f60b2",
+    "name": {
+      "de": "Facharbeiter-Kräuterwein",
+      "en": "Competent Craftsman's Draught",
+      "fr": "Potion spiritueuse de virtuosité",
+      "ja": "名匠の薬酒"
+    }
+  },
+  {
+    "craftsmanship_percent": 3,
+    "craftsmanship_value": 50,
+    "hq": true,
+    "id": "f7bfd7f60b2",
+    "name": {
+      "de": "Facharbeiter-Kräuterwein",
+      "en": "Competent Craftsman's Draught",
+      "fr": "Potion spiritueuse de virtuosité",
+      "ja": "名匠の薬酒"
+    }
+  },
+  {
+    "craftsmanship_percent": 2,
     "craftsmanship_value": 33,
     "hq": false,
     "id": "92d3ba5a6d6",
@@ -93,6 +141,30 @@
       "en": "Competent Craftsman's Tea",
       "fr": "Infusion de virtuosité",
       "ja": "名匠の薬茶"
+    }
+  },
+  {
+    "cp_percent": 5,
+    "cp_value": 17,
+    "hq": false,
+    "id": "cc9aeb31e48",
+    "name": {
+      "de": "Fachwissen-Kräuterwein",
+      "en": "Cunning Craftsman's Draught",
+      "fr": "Potion spiritueuse de capacité",
+      "ja": "魔匠の薬酒"
+    }
+  },
+  {
+    "cp_percent": 6,
+    "cp_value": 21,
+    "hq": true,
+    "id": "cc9aeb31e48",
+    "name": {
+      "de": "Fachwissen-Kräuterwein",
+      "en": "Cunning Craftsman's Draught",
+      "fr": "Potion spiritueuse de capacité",
+      "ja": "魔匠の薬酒"
     }
   },
   {

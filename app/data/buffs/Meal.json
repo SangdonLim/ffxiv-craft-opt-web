@@ -463,6 +463,62 @@
   },
   {
     "control_percent": 7,
+    "control_value": 132,
+    "craftsmanship_percent": 4,
+    "craftsmanship_value": 62,
+    "hq": false,
+    "id": "0742f46674b",
+    "name": {
+      "de": "Riesentaramosalata",
+      "en": "Giant Haddock Dip",
+      "fr": "Tarama géant",
+      "ja": "ジャイアントタラモサラータ"
+    }
+  },
+  {
+    "control_percent": 9,
+    "control_value": 165,
+    "craftsmanship_percent": 5,
+    "craftsmanship_value": 77,
+    "hq": true,
+    "id": "0742f46674b",
+    "name": {
+      "de": "Riesentaramosalata",
+      "en": "Giant Haddock Dip",
+      "fr": "Tarama géant",
+      "ja": "ジャイアントタラモサラータ"
+    }
+  },
+  {
+    "cp_percent": 8,
+    "cp_value": 26,
+    "craftsmanship_percent": 7,
+    "craftsmanship_value": 146,
+    "hq": false,
+    "id": "5239a5ab87e",
+    "name": {
+      "de": "Glückskarottensaft",
+      "en": "Happiness Juice",
+      "fr": "Jus de bonheur",
+      "ja": "ハピネスジュース"
+    }
+  },
+  {
+    "cp_percent": 10,
+    "cp_value": 32,
+    "craftsmanship_percent": 9,
+    "craftsmanship_value": 183,
+    "hq": true,
+    "id": "5239a5ab87e",
+    "name": {
+      "de": "Glückskarottensaft",
+      "en": "Happiness Juice",
+      "fr": "Jus de bonheur",
+      "ja": "ハピネスジュース"
+    }
+  },
+  {
+    "control_percent": 7,
     "control_value": 62,
     "cp_percent": 3,
     "cp_value": 8,
@@ -660,7 +716,7 @@
     "id": "3a02d54d0ad",
     "name": {
       "de": "Gebratener Mahi-Mahi",
-      "en": "Pan-fried Mahi-Mahi",
+      "en": "Pan-fried Mahi-mahi",
       "fr": "Mahi-mahi frit",
       "ja": "マヒマヒの揚げ焼き"
     }
@@ -672,7 +728,7 @@
     "id": "3a02d54d0ad",
     "name": {
       "de": "Gebratener Mahi-Mahi",
-      "en": "Pan-fried Mahi-Mahi",
+      "en": "Pan-fried Mahi-mahi",
       "fr": "Mahi-mahi frit",
       "ja": "マヒマヒの揚げ焼き"
     }
@@ -983,6 +1039,34 @@
       "en": "Tempura Platter",
       "fr": "Assortiment de tenpura",
       "ja": "天ぷら盛り合わせ"
+    }
+  },
+  {
+    "control_percent": 4,
+    "control_value": 61,
+    "cp_percent": 21,
+    "cp_value": 62,
+    "hq": false,
+    "id": "84fd8d880fd",
+    "name": {
+      "de": "Tsai Tou Vounou",
+      "en": "Tsai tou Vounou",
+      "fr": "Chai tou vounou",
+      "ja": "チャイ・トゥ・ヴヌー"
+    }
+  },
+  {
+    "control_percent": 5,
+    "control_value": 76,
+    "cp_percent": 26,
+    "cp_value": 78,
+    "hq": true,
+    "id": "84fd8d880fd",
+    "name": {
+      "de": "Tsai Tou Vounou",
+      "en": "Tsai tou Vounou",
+      "fr": "Chai tou vounou",
+      "ja": "チャイ・トゥ・ヴヌー"
     }
   },
   {
