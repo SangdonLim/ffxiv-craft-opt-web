@@ -20143,6 +20143,24 @@
     "suggestedCraftsmanship": 2590
   },
   {
+    "baseLevel": 86,
+    "difficulty": 3100,
+    "durability": 80,
+    "id": "5376",
+    "level": 540,
+    "maxQuality": 6800,
+    "name": {
+      "de": "Vasenset aus Walnussholz",
+      "en": "Walnut Flower Vases",
+      "fr": "Vases de fleurs en noyer",
+      "ja": "ウォルナットフラワーベース"
+    },
+    "progressDivider": 126,
+    "qualityDivider": 110,
+    "suggestedControl": 2451,
+    "suggestedCraftsmanship": 2590
+  },
+  {
     "baseLevel": 87,
     "difficulty": 1600,
     "durability": 40,
@@ -20344,6 +20362,111 @@
   },
   {
     "baseLevel": 90,
+    "difficulty": 2925,
+    "durability": 35,
+    "id": "34897",
+    "level": 580,
+    "maxQuality": 7800,
+    "name": {
+      "de": "Visionslösung der Geschicklichkeit VI",
+      "en": "Grade 6 Dexterity Alkahest",
+      "fr": "Eau chimérique de dextérité VI",
+      "ja": "眼力の幻水G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 2925,
+    "durability": 35,
+    "id": "34899",
+    "level": 580,
+    "maxQuality": 7800,
+    "name": {
+      "de": "Visionslösung der Intelligenz VI",
+      "en": "Grade 6 Intelligence Alkahest",
+      "fr": "Eau chimérique d'intelligence VI",
+      "ja": "知力の幻水G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 2925,
+    "durability": 35,
+    "id": "34900",
+    "level": 580,
+    "maxQuality": 7800,
+    "name": {
+      "de": "Visionslösung der Willenskraft VI",
+      "en": "Grade 6 Mind Alkahest",
+      "fr": "Eau chimérique d'esprit VI",
+      "ja": "心力の幻水G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 2925,
+    "durability": 35,
+    "id": "34896",
+    "level": 580,
+    "maxQuality": 7800,
+    "name": {
+      "de": "Visionslösung der Stärke VI",
+      "en": "Grade 6 Strength Alkahest",
+      "fr": "Eau chimérique de force VI",
+      "ja": "剛力の幻水G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 2925,
+    "durability": 35,
+    "id": "34898",
+    "level": 580,
+    "maxQuality": 7800,
+    "name": {
+      "de": "Visionslösung der Konstitution VI",
+      "en": "Grade 6 Vitality Alkahest",
+      "fr": "Eau chimérique de vitalité VI",
+      "ja": "活力の幻水G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
     "id": "5289",
@@ -20461,6 +20584,153 @@
     "qualityDivider": 115,
     "qualityModifier": 80,
     "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3900,
+    "durability": 70,
+    "id": "34811",
+    "level": 580,
+    "maxQuality": 10920,
+    "name": {
+      "de": "Klassischer Kodex",
+      "en": "Classical Codex",
+      "fr": "Codex classique",
+      "ja": "クラシカル・コーデックス"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3900,
+    "durability": 70,
+    "id": "34810",
+    "level": 580,
+    "maxQuality": 10920,
+    "name": {
+      "de": "Klassischer Index",
+      "en": "Classical Index",
+      "fr": "Index classique",
+      "ja": "クラシカル・インデックス"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3900,
+    "durability": 70,
+    "id": "34886",
+    "level": 580,
+    "maxQuality": 10920,
+    "name": {
+      "de": "Visionsremedium der Geschicklichkeit VI",
+      "en": "Grade 6 Tincture of Dexterity",
+      "fr": "Philtre chimérique de dextérité VI",
+      "ja": "眼力の幻薬G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3900,
+    "durability": 70,
+    "id": "34888",
+    "level": 580,
+    "maxQuality": 10920,
+    "name": {
+      "de": "Visionsremedium der Intelligenz VI",
+      "en": "Grade 6 Tincture of Intelligence",
+      "fr": "Philtre chimérique d'intelligence VI",
+      "ja": "知力の幻薬G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3900,
+    "durability": 70,
+    "id": "34889",
+    "level": 580,
+    "maxQuality": 10920,
+    "name": {
+      "de": "Visionsremedium der Willenskraft VI",
+      "en": "Grade 6 Tincture of Mind",
+      "fr": "Philtre chimérique d'esprit VI",
+      "ja": "心力の幻薬G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3900,
+    "durability": 70,
+    "id": "34885",
+    "level": 580,
+    "maxQuality": 10920,
+    "name": {
+      "de": "Visionsremedium der Stärke VI",
+      "en": "Grade 6 Tincture of Strength",
+      "fr": "Philtre chimérique de force VI",
+      "ja": "剛力の幻薬G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3900,
+    "durability": 70,
+    "id": "34887",
+    "level": 580,
+    "maxQuality": 10920,
+    "name": {
+      "de": "Visionsremedium der Konstitution VI",
+      "en": "Grade 6 Tincture of Vitality",
+      "fr": "Philtre chimérique de vitalité VI",
+      "ja": "活力の幻薬G6"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
     "suggestedControl": 2703,
     "suggestedCraftsmanship": 2924
   }
