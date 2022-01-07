@@ -76,12 +76,12 @@ function Synth(crafter, recipe, maxTrickUses, reliabilityIndex, useConditions, m
 }
 
 Synth.prototype.calculateBaseProgressIncrease = function (levelDifference, craftsmanship) {
-    var levelDifferenceFactor = levelDifference > 0 ? 1.0 : (this.recipe.progressModifier / 100.0);
+    var levelDifferenceFactor = levelDifference > 0 ? 1.0 : (this.recipe.progressModifier * Math.fround(0.01));
     return Math.floor(((this.crafter.craftsmanship * 10.0) / this.recipe.progressDivider + 2.0) * levelDifferenceFactor)
 };
 
 Synth.prototype.calculateBaseQualityIncrease = function (levelDifference, control) {
-    var levelDifferenceFactor = levelDifference > 0 ? 1.0 : (this.recipe.qualityModifier / 100.0);
+    var levelDifferenceFactor = levelDifference > 0 ? 1.0 : (this.recipe.qualityModifier * Math.fround(0.01));
     return Math.floor(((this.crafter.control * 10.0) / this.recipe.qualityDivider + 35.0) * levelDifferenceFactor)
 };
 
@@ -369,12 +369,12 @@ function ApplyModifiers(s, action, condition) {
 
     // Calculate base and modified progress gain
     var bProgressGain = s.synth.calculateBaseProgressIncrease(levelDifference, craftsmanship);
-    bProgressGain = bProgressGain * actionProgress * progressIncreaseMultiplier;
+    bProgressGain = bProgressGain * Math.fround(actionProgress * progressIncreaseMultiplier);
     bProgressGain = Math.floor(bProgressGain)
 
     // Calculate base and modified quality gain
     var bQualityGain = s.synth.calculateBaseQualityIncrease(levelDifference, control);
-    bQualityGain = bQualityGain * actionQuality * qualityIncreaseMultiplier;
+    bQualityGain = bQualityGain * Math.fround(actionQuality * qualityIncreaseMultiplier);
     bQualityGain = Math.floor(bQualityGain)
 
     // Effects modifying quality gain directly
