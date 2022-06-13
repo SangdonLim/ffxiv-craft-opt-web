@@ -10153,6 +10153,168 @@
     "baseLevel": 60,
     "difficulty": 580,
     "durability": 70,
+    "id": "5402",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Klassisches Coerthas-Fenster",
+      "en": "Highland Classical Window",
+      "fr": "Fenêtre classique coerthienne",
+      "ja": "クルザン・クラシックウィンドウ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5418",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Kompositüberdachung",
+      "en": "Highland Composite Awning",
+      "fr": "Auvent composite coerthien",
+      "ja": "クルザン・コンポジットオーニング"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5386",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Komposithüttendach",
+      "en": "Highland Cottage Roof (Composite)",
+      "fr": "Toit de maisonnette composite coerthienne",
+      "ja": "クルザン・コンポジットコテージ・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5395",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Komposithüttenmauer",
+      "en": "Highland Cottage Wall (Composite)",
+      "fr": "Mur de maisonnette composite coerthienne",
+      "ja": "クルザン・コンポジットコテージ・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5389",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Komposithausdach",
+      "en": "Highland House Roof (Composite)",
+      "fr": "Toit de pavillon composite coerthien",
+      "ja": "クルザン・コンポジットハウス・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5398",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Komposithausmauer",
+      "en": "Highland House Wall (Composite)",
+      "fr": "Mur de pavillon composite coerthien",
+      "ja": "クルザン・コンポジットハウス・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5408",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Wandvertäfelung",
+      "en": "Highland Interior Wall",
+      "fr": "Revêtement mural coerthien",
+      "ja": "クルザン・インナーウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5392",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Kompositresidenzdach",
+      "en": "Highland Mansion Roof (Composite)",
+      "fr": "Toit de villa composite coerthienne",
+      "ja": "クルザン・コンポジットレジデンス・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5401",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Kompositresidenzmauer",
+      "en": "Highland Mansion Wall (Composite)",
+      "fr": "Mur de villa composite coerthienne",
+      "ja": "クルザン・コンポジットレジデンス・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
     "id": "31511",
     "level": 150,
     "maxQuality": 1350,
@@ -15396,6 +15558,48 @@
     "baseLevel": 70,
     "difficulty": 1200,
     "durability": 70,
+    "id": "35008",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Kodex des Meeresgottes",
+      "en": "Susano's Rapturous Codex",
+      "fr": "Écrit de Susano flamboyant",
+      "ja": "須佐之男文書【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
+    "id": "35007",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Grimoire des Meeresgottes",
+      "en": "Susano's Rapturous Grimoire",
+      "fr": "Sûtra de Susano flamboyant",
+      "ja": "須佐之男経典【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
     "id": "34020",
     "level": 320,
     "maxQuality": 4800,
@@ -17181,6 +17385,24 @@
     "baseLevel": 74,
     "difficulty": 1360,
     "durability": 80,
+    "id": "5461",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Schwarze Byregotia-Halskette",
+      "en": "Black Byregotia Choker",
+      "fr": "Ras de cou byregotia noire",
+      "ja": "ビエルゴヴァイオレットチョーカー:ブラック"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
     "id": "5354",
     "level": 403,
     "maxQuality": 4000,
@@ -17189,6 +17411,24 @@
       "en": "Black Triteleia Earring",
       "fr": "Boucle d'oreille triteleia noir",
       "ja": "トリテレイアイヤリング:ブラック"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
+    "id": "5455",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Blaue Byregotia-Halskette",
+      "en": "Blue Byregotia Choker",
+      "fr": "Ras de cou byregotia bleue",
+      "ja": "ビエルゴヴァイオレットチョーカー:ブルー"
     },
     "progressDivider": 104,
     "qualityDivider": 84,
@@ -17253,6 +17493,24 @@
     "baseLevel": 74,
     "difficulty": 1360,
     "durability": 80,
+    "id": "5457",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Grüne Byregotia-Halskette",
+      "en": "Green Byregotia Choker",
+      "fr": "Ras de cou byregotia verte",
+      "ja": "ビエルゴヴァイオレットチョーカー:グリーン"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
     "id": "5350",
     "level": 403,
     "maxQuality": 4000,
@@ -17289,6 +17547,24 @@
     "baseLevel": 74,
     "difficulty": 1360,
     "durability": 80,
+    "id": "5458",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Orange Byregotia-Halskette",
+      "en": "Orange Byregotia Choker",
+      "fr": "Ras de cou byregotia orange",
+      "ja": "ビエルゴヴァイオレットチョーカー:オレンジ"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
     "id": "5351",
     "level": 403,
     "maxQuality": 4000,
@@ -17307,6 +17583,24 @@
     "baseLevel": 74,
     "difficulty": 1360,
     "durability": 80,
+    "id": "5459",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Violette Byregotia-Halskette",
+      "en": "Purple Byregotia Choker",
+      "fr": "Ras de cou byregotia violette",
+      "ja": "ビエルゴヴァイオレットチョーカー:パープル"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
     "id": "5352",
     "level": 403,
     "maxQuality": 4000,
@@ -17315,6 +17609,24 @@
       "en": "Purple Triteleia Earring",
       "fr": "Boucle d'oreille triteleia violet",
       "ja": "トリテレイアイヤリング:パープル"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
+    "id": "5462",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Mehrfarbige Byregotia-Halskette",
+      "en": "Rainbow Byregotia Choker",
+      "fr": "Ras de cou byregotia multicolore",
+      "ja": "ビエルゴヴァイオレットチョーカー:ブレンド"
     },
     "progressDivider": 104,
     "qualityDivider": 84,
@@ -17361,6 +17673,24 @@
     "baseLevel": 74,
     "difficulty": 1360,
     "durability": 80,
+    "id": "5454",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Rote Byregotia-Halskette",
+      "en": "Red Byregotia Choker",
+      "fr": "Ras de cou byregotia rouge",
+      "ja": "ビエルゴヴァイオレットチョーカー:レッド"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
     "id": "5347",
     "level": 403,
     "maxQuality": 4000,
@@ -17379,6 +17709,24 @@
     "baseLevel": 74,
     "difficulty": 1360,
     "durability": 80,
+    "id": "5460",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Weiße Byregotia-Halskette",
+      "en": "White Byregotia Choker",
+      "fr": "Ras de cou byregotia blanche",
+      "ja": "ビエルゴヴァイオレットチョーカー:ホワイト"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
     "id": "5353",
     "level": 403,
     "maxQuality": 4000,
@@ -17387,6 +17735,24 @@
       "en": "White Triteleia Earring",
       "fr": "Boucle d'oreille triteleia blanc",
       "ja": "トリテレイアイヤリング:ホワイト"
+    },
+    "progressDivider": 104,
+    "qualityDivider": 84,
+    "suggestedControl": 1387,
+    "suggestedCraftsmanship": 1498
+  },
+  {
+    "baseLevel": 74,
+    "difficulty": 1360,
+    "durability": 80,
+    "id": "5456",
+    "level": 403,
+    "maxQuality": 4000,
+    "name": {
+      "de": "Gelbe Byregotia-Halskette",
+      "en": "Yellow Byregotia Choker",
+      "fr": "Ras de cou byregotia jaune",
+      "ja": "ビエルゴヴァイオレットチョーカー:イエロー"
     },
     "progressDivider": 104,
     "qualityDivider": 84,
@@ -18026,6 +18392,24 @@
   {
     "baseLevel": 80,
     "difficulty": 1780,
+    "durability": 60,
+    "id": "34951",
+    "level": 430,
+    "maxQuality": 3680,
+    "name": {
+      "de": "Akademisches Schreibset",
+      "en": "Aetheroconductive Quill",
+      "fr": "Matériel d'écriture scolaire",
+      "ja": "留学生用の筆記具"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "suggestedControl": 1733,
+    "suggestedCraftsmanship": 1866
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1780,
     "durability": 80,
     "id": "4660",
     "level": 430,
@@ -18583,6 +18967,25 @@
     "stars": 2,
     "suggestedControl": 1990,
     "suggestedCraftsmanship": 2140
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1900,
+    "durability": 60,
+    "id": "34952",
+    "level": 440,
+    "maxQuality": 3960,
+    "name": {
+      "de": "Akademisches Magie-Rüstzeug",
+      "en": "Aetheroconductive Focus",
+      "fr": "Fournitures scolaires magiques",
+      "ja": "留学生用の魔器"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "stars": 1,
+    "suggestedControl": 1860,
+    "suggestedCraftsmanship": 2000
   },
   {
     "baseLevel": 80,
@@ -19713,6 +20116,24 @@
   {
     "baseLevel": 81,
     "difficulty": 2000,
+    "durability": 60,
+    "id": "34953",
+    "level": 517,
+    "maxQuality": 4160,
+    "name": {
+      "de": "Ätherothermosdose",
+      "en": "Luncheon Coffer",
+      "fr": "Boîte à déjeuner magique",
+      "ja": "魔法のランチボックス"
+    },
+    "progressDivider": 121,
+    "qualityDivider": 105,
+    "suggestedControl": 2136,
+    "suggestedCraftsmanship": 2234
+  },
+  {
+    "baseLevel": 81,
+    "difficulty": 2000,
     "durability": 80,
     "id": "34742",
     "level": 517,
@@ -19727,6 +20148,24 @@
     "qualityDivider": 105,
     "suggestedControl": 2136,
     "suggestedCraftsmanship": 2234
+  },
+  {
+    "baseLevel": 82,
+    "difficulty": 2300,
+    "durability": 60,
+    "id": "34954",
+    "level": 520,
+    "maxQuality": 4560,
+    "name": {
+      "de": "Ätherionette",
+      "en": "Aetheroconductive Mammet",
+      "fr": "Poupée d'entraînement magique",
+      "ja": "特訓用の魔法人形"
+    },
+    "progressDivider": 122,
+    "qualityDivider": 106,
+    "suggestedControl": 2238,
+    "suggestedCraftsmanship": 2336
   },
   {
     "baseLevel": 82,
@@ -19884,6 +20323,24 @@
       "en": "Rarefied Luncheon Toadskin Grimoire",
       "fr": "Grimoire en cuir de poulet des montagnes collectionnable",
       "ja": "収集用のマウンテンチキングリモア"
+    },
+    "progressDivider": 123,
+    "qualityDivider": 107,
+    "suggestedControl": 2340,
+    "suggestedCraftsmanship": 2438
+  },
+  {
+    "baseLevel": 83,
+    "difficulty": 2600,
+    "durability": 60,
+    "id": "34955",
+    "level": 525,
+    "maxQuality": 4960,
+    "name": {
+      "de": "Akademische Ausstattung",
+      "en": "School Supplies",
+      "fr": "Affaires de soutien scolaire",
+      "ja": "学習支援用の支給品"
     },
     "progressDivider": 123,
     "qualityDivider": 107,
@@ -20467,6 +20924,27 @@
   },
   {
     "baseLevel": 90,
+    "difficulty": 3010,
+    "durability": 35,
+    "id": "35019",
+    "level": 590,
+    "maxQuality": 8400,
+    "name": {
+      "de": "Thavnair-Faser",
+      "en": "Hannish Fiber",
+      "fr": "Fibre thavnairoise",
+      "ja": "サベネアンファイバー"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
     "id": "5289",
@@ -20529,6 +21007,46 @@
     "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
+    "id": "5437",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Efeuvorhang",
+      "en": "Ivy Curtain",
+      "fr": "Rideau de lierre",
+      "ja": "アイビーカーテン"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5451",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Gartenblumenarrangement",
+      "en": "Planter Set",
+      "fr": "Ensemble de jardinières",
+      "ja": "プランターセット"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
     "id": "34907",
     "level": 560,
     "maxQuality": 7200,
@@ -20557,6 +21075,48 @@
       "en": "Endcaller Orchestrion Roll",
       "fr": "Rouleau “Endcaller”",
       "ja": "オーケストリオン譜:ENDCALLER"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
+    "id": "35016",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Notenrolle von „The Final Day“",
+      "en": "The Final Day Orchestrion Roll",
+      "fr": "Rouleau “The Final Day”",
+      "ja": "オーケストリオン譜:終焉の戦い"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
+    "id": "35017",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Notenrolle von „With Hearts Aligned“",
+      "en": "With Hearts Aligned Orchestrion Roll",
+      "fr": "Rouleau “With Hearts Aligned”",
+      "ja": "オーケストリオン譜:想いが動かす力"
     },
     "progressDivider": 130,
     "progressModifier": 90,

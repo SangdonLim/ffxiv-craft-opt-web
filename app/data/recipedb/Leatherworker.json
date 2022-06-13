@@ -1659,6 +1659,24 @@
     "baseLevel": 18,
     "difficulty": 67,
     "durability": 70,
+    "id": "360",
+    "level": 18,
+    "maxQuality": 450,
+    "name": {
+      "de": "Leder-Caesti",
+      "en": "Goatskin Cesti",
+      "fr": "Cestes",
+      "ja": "セスタス"
+    },
+    "progressDivider": 50,
+    "qualityDivider": 30,
+    "suggestedControl": 39,
+    "suggestedCraftsmanship": 78
+  },
+  {
+    "baseLevel": 18,
+    "difficulty": 67,
+    "durability": 70,
     "id": "359",
     "level": 18,
     "maxQuality": 450,
@@ -1685,24 +1703,6 @@
       "en": "Goatskin Wristguards",
       "fr": "Garde-poignets en cuir de bouquetin",
       "ja": "アルドゴートリストガード"
-    },
-    "progressDivider": 50,
-    "qualityDivider": 30,
-    "suggestedControl": 39,
-    "suggestedCraftsmanship": 78
-  },
-  {
-    "baseLevel": 18,
-    "difficulty": 67,
-    "durability": 70,
-    "id": "360",
-    "level": 18,
-    "maxQuality": 450,
-    "name": {
-      "de": "Leder-Caesti",
-      "en": "Hard Leather Cesti",
-      "fr": "Cestes",
-      "ja": "セスタス"
     },
     "progressDivider": 50,
     "qualityDivider": 30,
@@ -22083,6 +22083,24 @@
     "baseLevel": 80,
     "difficulty": 1780,
     "durability": 60,
+    "id": "34941",
+    "level": 430,
+    "maxQuality": 3680,
+    "name": {
+      "de": "Akademisches Schreibset",
+      "en": "Aetheroconductive Quill",
+      "fr": "Matériel d'écriture scolaire",
+      "ja": "留学生用の筆記具"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "suggestedControl": 1733,
+    "suggestedCraftsmanship": 1866
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1780,
+    "durability": 60,
     "id": "33749",
     "level": 430,
     "maxQuality": 11960,
@@ -22328,6 +22346,25 @@
       "en": "Adventurer's Hooded Vest",
       "fr": "Veste à capuche d'aventurier",
       "ja": "アドベンチャラーフードベスト"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "stars": 1,
+    "suggestedControl": 1860,
+    "suggestedCraftsmanship": 2000
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1900,
+    "durability": 60,
+    "id": "34942",
+    "level": 440,
+    "maxQuality": 3960,
+    "name": {
+      "de": "Akademisches Magie-Rüstzeug",
+      "en": "Aetheroconductive Focus",
+      "fr": "Fournitures scolaires magiques",
+      "ja": "留学生用の魔器"
     },
     "progressDivider": 110,
     "qualityDivider": 90,
@@ -24166,6 +24203,24 @@
   {
     "baseLevel": 81,
     "difficulty": 2000,
+    "durability": 60,
+    "id": "34943",
+    "level": 517,
+    "maxQuality": 4160,
+    "name": {
+      "de": "Ätherothermosdose",
+      "en": "Luncheon Coffer",
+      "fr": "Boîte à déjeuner magique",
+      "ja": "魔法のランチボックス"
+    },
+    "progressDivider": 121,
+    "qualityDivider": 105,
+    "suggestedControl": 2136,
+    "suggestedCraftsmanship": 2234
+  },
+  {
+    "baseLevel": 81,
+    "difficulty": 2000,
     "durability": 80,
     "id": "34732",
     "level": 517,
@@ -24193,6 +24248,24 @@
       "en": "Luncheon Toad Leather",
       "fr": "Cuir de poulet des montagnes",
       "ja": "マウンテンレザー"
+    },
+    "progressDivider": 122,
+    "qualityDivider": 106,
+    "suggestedControl": 2238,
+    "suggestedCraftsmanship": 2336
+  },
+  {
+    "baseLevel": 82,
+    "difficulty": 2300,
+    "durability": 60,
+    "id": "34944",
+    "level": 520,
+    "maxQuality": 4560,
+    "name": {
+      "de": "Ätherionette",
+      "en": "Aetheroconductive Mammet",
+      "fr": "Poupée d'entraînement magique",
+      "ja": "特訓用の魔法人形"
     },
     "progressDivider": 122,
     "qualityDivider": 106,
@@ -24517,6 +24590,24 @@
       "en": "Rarefied Luncheon Toadskin Hose",
       "fr": "Fuseau en cuir de poulet des montagnes collectionnable",
       "ja": "収集用のマウンテンチキンホーズ"
+    },
+    "progressDivider": 123,
+    "qualityDivider": 107,
+    "suggestedControl": 2340,
+    "suggestedCraftsmanship": 2438
+  },
+  {
+    "baseLevel": 83,
+    "difficulty": 2600,
+    "durability": 60,
+    "id": "34945",
+    "level": 525,
+    "maxQuality": 4960,
+    "name": {
+      "de": "Akademische Ausstattung",
+      "en": "School Supplies",
+      "fr": "Affaires de soutien scolaire",
+      "ja": "学習支援用の支給品"
     },
     "progressDivider": 123,
     "qualityDivider": 107,
@@ -25898,6 +25989,27 @@
     "baseLevel": 90,
     "difficulty": 3700,
     "durability": 80,
+    "id": "35023",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Universitäts-Schuhe",
+      "en": "Varsity Shoes",
+      "fr": "Chaussures universitaire",
+      "ja": "ヴァーシティ・シューズ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
     "id": "34913",
     "level": 570,
     "maxQuality": 7400,
@@ -26028,7 +26140,7 @@
     "level": 580,
     "maxQuality": 10920,
     "name": {
-      "de": "Klassische Laquearii-Caligae ",
+      "de": "Klassische Laquearii-Caligae",
       "en": "Classical Eques's Caligae",
       "fr": "Caligae d'eques classiques",
       "ja": "クラシカルエクエス・カリガ"
@@ -26158,6 +26270,111 @@
       "en": "Classical Signifer's Fingerless Gloves",
       "fr": "Gants sans doigts de signifer classiques",
       "ja": "クラシカルシグニフェル・フィンガレスグローブ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34991",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Stiefel des Eifers",
+      "en": "Pactmaker's Boots of Gathering",
+      "fr": "Bottes des ressources des associés",
+      "ja": "パクトメーカー・ギャザラーブーツ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34990",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Reiterhose des Eifers",
+      "en": "Pactmaker's Breeches of Gathering",
+      "fr": "Braies des ressources des associés",
+      "ja": "パクトメーカー・ギャザラーブリーチ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34989",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Kurzfingerhandschuhe des Eifers",
+      "en": "Pactmaker's Gloves of Gathering",
+      "fr": "Gants des ressources des associés",
+      "ja": "パクトメーカー・ギャザラーグローブ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34984",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Kurzfingerhandschuhe des Handwerks",
+      "en": "Pactmaker's Halfgloves of Crafting",
+      "fr": "Mitaines des créations des associés",
+      "ja": "パクトメーカー・クラフターハーフグローブ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34986",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Pumps des Handwerks",
+      "en": "Pactmaker's Pumps of Crafting",
+      "fr": "Escarpins des créations des associés",
+      "ja": "パクトメーカー・クラフターパンプス"
     },
     "progressDivider": 130,
     "progressModifier": 80,

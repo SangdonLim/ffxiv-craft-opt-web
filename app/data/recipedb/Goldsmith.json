@@ -15109,6 +15109,78 @@
     "baseLevel": 60,
     "difficulty": 580,
     "durability": 70,
+    "id": "5423",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinbogenmauer",
+      "en": "Highland Fence",
+      "fr": "Muret arqué coerthien",
+      "ja": "クルザン・アーチウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5424",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Gartenmauer",
+      "en": "Highland Potting Fence",
+      "fr": "Muret de jardinage coerthien",
+      "ja": "クルザン・ガーデニングウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5415",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinschornstein",
+      "en": "Highland Stone Chimney",
+      "fr": "Cheminée en pierre coerthienne",
+      "ja": "クルザン・ストーンチムニー"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5422",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinmauer",
+      "en": "Highland Stone Wall",
+      "fr": "Muret en pierre coerthien",
+      "ja": "クルザン・ストーンウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
     "id": "32788",
     "level": 150,
     "maxQuality": 2700,
@@ -16516,6 +16588,27 @@
       "en": "Eikon Iron Ring of Slaying",
       "fr": "Bague primordiale d'attaquant",
       "ja": "イコンアロイ・アタッカーリング"
+    },
+    "progressDivider": 70,
+    "progressModifier": 80,
+    "qualityDivider": 50,
+    "qualityModifier": 70,
+    "stars": 3,
+    "suggestedControl": 820,
+    "suggestedCraftsmanship": 850
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 880,
+    "durability": 70,
+    "id": "34996",
+    "level": 210,
+    "maxQuality": 3300,
+    "name": {
+      "de": "Hascherlite der Runde",
+      "en": "Milpreves of the Round",
+      "fr": "Mein gwrac'h de la Table ronde",
+      "ja": "ミルプレーヴェ・オブ・ラウンド"
     },
     "progressDivider": 70,
     "progressModifier": 80,
@@ -22959,6 +23052,69 @@
     "baseLevel": 70,
     "difficulty": 1200,
     "durability": 70,
+    "id": "35009",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Astrometer des Meeresgottes",
+      "en": "Susano's Rapturous Ephemeris",
+      "fr": "Éphéméridosphère de Susano flamboyante",
+      "ja": "須佐之男干支【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
+    "id": "35011",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Rapier des Meeresgottes",
+      "en": "Susano's Rapturous Rapier",
+      "fr": "Rapière de Susano flamboyante",
+      "ja": "須佐之男細剣【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
+    "id": "35006",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Stab des Meeresgottes",
+      "en": "Susano's Rapturous Rod",
+      "fr": "Bâton de Susano flamboyant",
+      "ja": "須佐之男呪杖【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
     "id": "34021",
     "level": 320,
     "maxQuality": 4800,
@@ -24792,7 +24948,7 @@
     "name": {
       "de": "Steingold-Syrinxi",
       "en": "Stonegold Syrinxi",
-      "fr": "Syringes en or pétré",
+      "fr": "Seringues en or pétré",
       "ja": "ストーンゴールドスリンクス"
     },
     "progressDivider": 102,
@@ -26807,6 +26963,24 @@
   {
     "baseLevel": 80,
     "difficulty": 1780,
+    "durability": 60,
+    "id": "34936",
+    "level": 430,
+    "maxQuality": 3680,
+    "name": {
+      "de": "Akademisches Schreibset",
+      "en": "Aetheroconductive Quill",
+      "fr": "Matériel d'écriture scolaire",
+      "ja": "留学生用の筆記具"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "suggestedControl": 1733,
+    "suggestedCraftsmanship": 1866
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1780,
     "durability": 80,
     "id": "4539",
     "level": 430,
@@ -27166,6 +27340,25 @@
     "stars": 2,
     "suggestedControl": 1990,
     "suggestedCraftsmanship": 2140
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1900,
+    "durability": 60,
+    "id": "34937",
+    "level": 440,
+    "maxQuality": 3960,
+    "name": {
+      "de": "Akademisches Magie-Rüstzeug",
+      "en": "Aetheroconductive Focus",
+      "fr": "Fournitures scolaires magiques",
+      "ja": "留学生用の魔器"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "stars": 1,
+    "suggestedControl": 1860,
+    "suggestedCraftsmanship": 2000
   },
   {
     "baseLevel": 80,
@@ -29323,6 +29516,24 @@
   {
     "baseLevel": 81,
     "difficulty": 2000,
+    "durability": 60,
+    "id": "34938",
+    "level": 517,
+    "maxQuality": 4160,
+    "name": {
+      "de": "Ätherothermosdose",
+      "en": "Luncheon Coffer",
+      "fr": "Boîte à déjeuner magique",
+      "ja": "魔法のランチボックス"
+    },
+    "progressDivider": 121,
+    "qualityDivider": 105,
+    "suggestedControl": 2136,
+    "suggestedCraftsmanship": 2234
+  },
+  {
+    "baseLevel": 81,
+    "difficulty": 2000,
     "durability": 80,
     "id": "34727",
     "level": 517,
@@ -29350,6 +29561,24 @@
       "en": "Pewter Ingot",
       "fr": "Lingot de plomb-étain",
       "ja": "ピューターインゴット"
+    },
+    "progressDivider": 122,
+    "qualityDivider": 106,
+    "suggestedControl": 2238,
+    "suggestedCraftsmanship": 2336
+  },
+  {
+    "baseLevel": 82,
+    "difficulty": 2300,
+    "durability": 60,
+    "id": "34939",
+    "level": 520,
+    "maxQuality": 4560,
+    "name": {
+      "de": "Ätherionette",
+      "en": "Aetheroconductive Mammet",
+      "fr": "Poupée d'entraînement magique",
+      "ja": "特訓用の魔法人形"
     },
     "progressDivider": 122,
     "qualityDivider": 106,
@@ -29674,6 +29903,24 @@
       "en": "Rarefied Pewter Choker",
       "fr": "Ras de cou en plomb-étain collectionnable",
       "ja": "収集用のピューターチョーカー"
+    },
+    "progressDivider": 123,
+    "qualityDivider": 107,
+    "suggestedControl": 2340,
+    "suggestedCraftsmanship": 2438
+  },
+  {
+    "baseLevel": 83,
+    "difficulty": 2600,
+    "durability": 60,
+    "id": "34940",
+    "level": 525,
+    "maxQuality": 4960,
+    "name": {
+      "de": "Akademische Ausstattung",
+      "en": "School Supplies",
+      "fr": "Affaires de soutien scolaire",
+      "ja": "学習支援用の支給品"
     },
     "progressDivider": 123,
     "qualityDivider": 107,
@@ -30320,7 +30567,7 @@
     "name": {
       "de": "Mangan-Syrinxi",
       "en": "Manganese Syrinxi",
-      "fr": "Syringes en manganèse",
+      "fr": "Seringues en manganèse",
       "ja": "マンガンスリンクス"
     },
     "progressDivider": 126,
@@ -31019,6 +31266,87 @@
   },
   {
     "baseLevel": 90,
+    "difficulty": 3010,
+    "durability": 35,
+    "id": "35018",
+    "level": 590,
+    "maxQuality": 8400,
+    "name": {
+      "de": "Eblan-Danburit",
+      "en": "Eblan Danburite",
+      "fr": "Danburite d'Éblana",
+      "ja": "エブラーナダンビュライト"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5449",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Ishgarder Badehaus",
+      "en": "Alpine Open-air Bath",
+      "fr": "Bain extérieur ishgardais",
+      "ja": "イシュガルディアン・バスハウス"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5426",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Amaurot-Boden",
+      "en": "Amaurotine Flooring",
+      "fr": "Parquet amaurotain",
+      "ja": "アーモロート・フローリング"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5425",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Amaurot-Innenwand",
+      "en": "Amaurotine Interior Wall",
+      "fr": "Revêtement mural amaurotain",
+      "ja": "アーモロート・インナーウォール"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
     "id": "5171",
@@ -31041,6 +31369,66 @@
     "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
+    "id": "5430",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Marmorzimmerbrunnen",
+      "en": "Indoor Marble Fountain",
+      "fr": "Fontaine d'intérieur en marbre",
+      "ja": "マーブル・インドアファウンテン"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5450",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Efeubehangene Zierbrücke",
+      "en": "Ivy-covered Bridge",
+      "fr": "Pont blanc couvert de lierre",
+      "ja": "アイビー・ホワイトブリッジ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5446",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Kristall-Lichterkette",
+      "en": "Ornamental Crystal Array",
+      "fr": "Guirlande de cristaux",
+      "ja": "クリスタル・ハンギングオーナメント"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
     "id": "34904",
     "level": 560,
     "maxQuality": 7200,
@@ -31049,6 +31437,26 @@
       "en": "Rarefied Chondrite Needle",
       "fr": "Aiguille en chondrite collectionnable",
       "ja": "収集用のコンドライトニードル"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5436",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Riviera-Schwingtürtheke",
+      "en": "Riviera Swinging-door Counter",
+      "fr": "Comptoir à porte battante noscéen",
+      "ja": "スイングドアカウンター"
     },
     "progressDivider": 130,
     "progressModifier": 90,
@@ -31384,6 +31792,27 @@
       "en": "Classical Torquetum",
       "fr": "Torquetum classique",
       "ja": "クラシカル・トルクエタム"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34966",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Nadel",
+      "en": "Pactmaker's Needle",
+      "fr": "Aiguille des associés",
+      "ja": "パクトメーカー・ニードル"
     },
     "progressDivider": 130,
     "progressModifier": 80,

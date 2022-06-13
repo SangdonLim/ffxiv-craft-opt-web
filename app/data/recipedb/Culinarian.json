@@ -9209,7 +9209,7 @@
     "name": {
       "de": "Steppen-Tee",
       "en": "Steppe Tea",
-      "fr": "Thé de la Steppe",
+      "fr": "Thé de la steppe",
       "ja": "ステップティー"
     },
     "progressDivider": 90,
@@ -10292,7 +10292,7 @@
     "name": {
       "de": "Gebackener Megapiranha",
       "en": "Baked Megapiranha",
-      "fr": "Megapiranha au four",
+      "fr": "Méga piranha au four",
       "ja": "ベイクド・メガピラニア"
     },
     "progressDivider": 106,
@@ -10708,6 +10708,24 @@
       "en": "Panaloaf Sweetener",
       "fr": "Édulcorant truculent",
       "ja": "特製の甘味料"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "suggestedControl": 1733,
+    "suggestedCraftsmanship": 1866
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1780,
+    "durability": 60,
+    "id": "34956",
+    "level": 430,
+    "maxQuality": 3680,
+    "name": {
+      "de": "Akademisches Schreibset",
+      "en": "Aetheroconductive Quill",
+      "fr": "Matériel d'écriture scolaire",
+      "ja": "留学生用の筆記具"
     },
     "progressDivider": 110,
     "qualityDivider": 90,
@@ -11166,6 +11184,25 @@
     "stars": 2,
     "suggestedControl": 1990,
     "suggestedCraftsmanship": 2140
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1900,
+    "durability": 60,
+    "id": "34957",
+    "level": 440,
+    "maxQuality": 3960,
+    "name": {
+      "de": "Akademisches Magie-Rüstzeug",
+      "en": "Aetheroconductive Focus",
+      "fr": "Fournitures scolaires magiques",
+      "ja": "留学生用の魔器"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "stars": 1,
+    "suggestedControl": 1860,
+    "suggestedCraftsmanship": 2000
   },
   {
     "baseLevel": 80,
@@ -12113,6 +12150,24 @@
   {
     "baseLevel": 81,
     "difficulty": 2000,
+    "durability": 60,
+    "id": "34958",
+    "level": 517,
+    "maxQuality": 4160,
+    "name": {
+      "de": "Ätherothermosdose",
+      "en": "Luncheon Coffer",
+      "fr": "Boîte à déjeuner magique",
+      "ja": "魔法のランチボックス"
+    },
+    "progressDivider": 121,
+    "qualityDivider": 105,
+    "suggestedControl": 2136,
+    "suggestedCraftsmanship": 2234
+  },
+  {
+    "baseLevel": 81,
+    "difficulty": 2000,
     "durability": 80,
     "id": "34747",
     "level": 517,
@@ -12176,6 +12231,24 @@
       "en": "Perilla Oil",
       "fr": "Huile de périlla",
       "ja": "ペリラオイル"
+    },
+    "progressDivider": 122,
+    "qualityDivider": 106,
+    "suggestedControl": 2238,
+    "suggestedCraftsmanship": 2336
+  },
+  {
+    "baseLevel": 82,
+    "difficulty": 2300,
+    "durability": 60,
+    "id": "34959",
+    "level": 520,
+    "maxQuality": 4560,
+    "name": {
+      "de": "Ätherionette",
+      "en": "Aetheroconductive Mammet",
+      "fr": "Poupée d'entraînement magique",
+      "ja": "特訓用の魔法人形"
     },
     "progressDivider": 122,
     "qualityDivider": 106,
@@ -12302,6 +12375,24 @@
       "en": "Rarefied King Crab Cake",
       "fr": "Gâteau de crabe géant collectionnable",
       "ja": "収集用のキングクラブケーキ"
+    },
+    "progressDivider": 123,
+    "qualityDivider": 107,
+    "suggestedControl": 2340,
+    "suggestedCraftsmanship": 2438
+  },
+  {
+    "baseLevel": 83,
+    "difficulty": 2600,
+    "durability": 60,
+    "id": "34960",
+    "level": 525,
+    "maxQuality": 4960,
+    "name": {
+      "de": "Akademische Ausstattung",
+      "en": "School Supplies",
+      "fr": "Affaires de soutien scolaire",
+      "ja": "学習支援用の支給品"
     },
     "progressDivider": 123,
     "qualityDivider": 107,
@@ -12606,7 +12697,7 @@
     "name": {
       "de": "Gewürzshakshouka",
       "en": "Spicy Shakshouka",
-      "fr": "Chakchouka épicé",
+      "fr": "Chakchouka épicée",
       "ja": "スパイシーシャクシュカ"
     },
     "progressDivider": 126,
@@ -12712,7 +12803,7 @@
     "level": 550,
     "maxQuality": 7000,
     "name": {
-      "de": " Riesentoffelpuffer",
+      "de": "Riesentoffelpuffer",
       "en": "Giant Popoto Pancakes",
       "fr": "Crique géante",
       "ja": "ジャイアントポポトパンケーキ"
@@ -12914,6 +13005,26 @@
     "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
+    "id": "5445",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Gegrillter Süßfisch",
+      "en": "Sweetfish Skewers",
+      "fr": "Poisson-sucre grillé et salé",
+      "ja": "香魚の塩焼き"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
     "id": "5281",
     "level": 560,
     "maxQuality": 7200,
@@ -12962,6 +13073,26 @@
       "en": "Sykon Salad",
       "fr": "Salade de sycon",
       "ja": "シューコンサラダ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5435",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Wunderparfait",
+      "en": "Wondrous Parfait",
+      "fr": "Parfait des merveilles",
+      "ja": "ワンダーパフェ"
     },
     "progressDivider": 130,
     "progressModifier": 90,
@@ -13171,6 +13302,48 @@
       "en": "Thavnairian Chai",
       "fr": "Chai thavnairois",
       "ja": "サベネアンチャイ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34992",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Calamari Ripieni",
+      "en": "Calamari Ripieni",
+      "fr": "Khalamar ripieni",
+      "ja": "カラマリ・リピエーニ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34993",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Kalamarakia Tiganita",
+      "en": "Kalamarakia Tiganita",
+      "fr": "Khalamarkia tiganita",
+      "ja": "カラマラキア・ティガニタ"
     },
     "progressDivider": 130,
     "progressModifier": 80,

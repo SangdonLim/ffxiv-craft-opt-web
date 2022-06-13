@@ -8764,6 +8764,168 @@
     "baseLevel": 60,
     "difficulty": 580,
     "durability": 70,
+    "id": "5413",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Kompositschornstein",
+      "en": "Highland Composite Chimney",
+      "fr": "Cheminée composite coerthienne",
+      "ja": "クルザン・コンポジットチムニー"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5385",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinhüttendach",
+      "en": "Highland Cottage Roof (Stone)",
+      "fr": "Toit de maisonnette en pierre coerthienne",
+      "ja": "クルザン・ストーンコテージ・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5394",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinhüttenmauer",
+      "en": "Highland Cottage Wall (Stone)",
+      "fr": "Mur de maisonnette en pierre coerthienne",
+      "ja": "クルザン・ストーンコテージ・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5388",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinhausdach",
+      "en": "Highland House Roof (Stone)",
+      "fr": "Toit de pavillon en pierre coerthien",
+      "ja": "クルザン・ストーンハウス・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5397",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinhausmauer",
+      "en": "Highland House Wall (Stone)",
+      "fr": "Mur de pavillon en pierre coerthien",
+      "ja": "クルザン・ストーンハウス・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5391",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinresidenzdach",
+      "en": "Highland Mansion Roof (Stone)",
+      "fr": "Toit de villa en pierre coerthienne",
+      "ja": "クルザン・ストーンレジデンス・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5400",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinresidenzmauer",
+      "en": "Highland Mansion Wall (Stone)",
+      "fr": "Mur de villa en pierre coerthienne",
+      "ja": "クルザン・ストーンレジデンス・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5406",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Ornamenttür",
+      "en": "Highland Ornate Door",
+      "fr": "Porte ornée coerthienne",
+      "ja": "クルザン・オーネイトドア"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5417",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Steinüberdachung",
+      "en": "Highland Stone Awning",
+      "fr": "Auvent en pierre coerthien",
+      "ja": "クルザン・ストーンオーニング"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
     "id": "32761",
     "level": 150,
     "maxQuality": 2700,
@@ -14270,6 +14432,27 @@
     "baseLevel": 70,
     "difficulty": 1200,
     "durability": 70,
+    "id": "35013",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Paladin-Rüstzeug des Meeresgottes",
+      "en": "Susano's Rapturous Arms",
+      "fr": "Attirail de Susano flamboyant pour paladin",
+      "ja": "須佐之男騎士装具【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
     "id": "34024",
     "level": 320,
     "maxQuality": 4800,
@@ -16243,6 +16426,24 @@
   {
     "baseLevel": 80,
     "difficulty": 1780,
+    "durability": 60,
+    "id": "34931",
+    "level": 430,
+    "maxQuality": 3680,
+    "name": {
+      "de": "Akademisches Schreibset",
+      "en": "Aetheroconductive Quill",
+      "fr": "Matériel d'écriture scolaire",
+      "ja": "留学生用の筆記具"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "suggestedControl": 1733,
+    "suggestedCraftsmanship": 1866
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1780,
     "durability": 80,
     "id": "4725",
     "level": 430,
@@ -16602,6 +16803,25 @@
     "stars": 2,
     "suggestedControl": 1990,
     "suggestedCraftsmanship": 2140
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1900,
+    "durability": 60,
+    "id": "34932",
+    "level": 440,
+    "maxQuality": 3960,
+    "name": {
+      "de": "Akademisches Magie-Rüstzeug",
+      "en": "Aetheroconductive Focus",
+      "fr": "Fournitures scolaires magiques",
+      "ja": "留学生用の魔器"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "stars": 1,
+    "suggestedControl": 1860,
+    "suggestedCraftsmanship": 2000
   },
   {
     "baseLevel": 80,
@@ -17965,6 +18185,24 @@
   {
     "baseLevel": 81,
     "difficulty": 2000,
+    "durability": 60,
+    "id": "34933",
+    "level": 517,
+    "maxQuality": 4160,
+    "name": {
+      "de": "Ätherothermosdose",
+      "en": "Luncheon Coffer",
+      "fr": "Boîte à déjeuner magique",
+      "ja": "魔法のランチボックス"
+    },
+    "progressDivider": 121,
+    "qualityDivider": 105,
+    "suggestedControl": 2136,
+    "suggestedCraftsmanship": 2234
+  },
+  {
+    "baseLevel": 81,
+    "difficulty": 2000,
     "durability": 80,
     "id": "34722",
     "level": 517,
@@ -17992,6 +18230,24 @@
       "en": "High Durium Ingot",
       "fr": "Lingot de durium noble",
       "ja": "ハイダリウムインゴット"
+    },
+    "progressDivider": 122,
+    "qualityDivider": 106,
+    "suggestedControl": 2238,
+    "suggestedCraftsmanship": 2336
+  },
+  {
+    "baseLevel": 82,
+    "difficulty": 2300,
+    "durability": 60,
+    "id": "34934",
+    "level": 520,
+    "maxQuality": 4560,
+    "name": {
+      "de": "Ätherionette",
+      "en": "Aetheroconductive Mammet",
+      "fr": "Poupée d'entraînement magique",
+      "ja": "特訓用の魔法人形"
     },
     "progressDivider": 122,
     "qualityDivider": 106,
@@ -18154,6 +18410,24 @@
       "en": "Rarefied High Durium Kite Shield",
       "fr": "Écu mandorle en durium noble collectionnable",
       "ja": "収集用のハイダリウムカイトシールド"
+    },
+    "progressDivider": 123,
+    "qualityDivider": 107,
+    "suggestedControl": 2340,
+    "suggestedCraftsmanship": 2438
+  },
+  {
+    "baseLevel": 83,
+    "difficulty": 2600,
+    "durability": 60,
+    "id": "34935",
+    "level": 525,
+    "maxQuality": 4960,
+    "name": {
+      "de": "Akademische Ausstattung",
+      "en": "School Supplies",
+      "fr": "Affaires de soutien scolaire",
+      "ja": "学習支援用の支給品"
     },
     "progressDivider": 123,
     "qualityDivider": 107,
@@ -19213,6 +19487,26 @@
     "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
+    "id": "5443",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Kathedralenrednerpult",
+      "en": "Cathedral Lectern",
+      "fr": "Chaire de cathédrale",
+      "ja": "大聖堂の講壇"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
     "id": "5172",
     "level": 560,
     "maxQuality": 7200,
@@ -19271,6 +19565,26 @@
   },
   {
     "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5441",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Stahlspind",
+      "en": "Steel Locker",
+      "fr": "Casier métallique",
+      "ja": "スチールロッカー"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
     "difficulty": 3700,
     "durability": 80,
     "id": "34919",
@@ -19281,6 +19595,27 @@
       "en": "Barding of Eternal Darkness",
       "fr": "Barde des Ténèbres éternelles",
       "ja": "エターナルダークネス・バード"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
+    "id": "35015",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Blaufeder-Rossharnisch",
+      "en": "Bluefeather Barding",
+      "fr": "Barde à plumes bleues",
+      "ja": "ブルーフェザード・バード"
     },
     "progressDivider": 130,
     "progressModifier": 90,
@@ -19596,6 +19931,48 @@
       "en": "Classical Shield",
       "fr": "Bouclier classique",
       "ja": "クラシカル・シールド"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34967",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Destillierkolben",
+      "en": "Pactmaker's Alembic",
+      "fr": "Alambic des associés",
+      "ja": "パクトメーカー・アレンビック"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34968",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Arkasodara-Bratpfanne",
+      "en": "Pactmaker's Arkasodara Frypan",
+      "fr": "Poêle à frire arkasodara des associés",
+      "ja": "パクトメーカー・アルカソーダラフライパン"
     },
     "progressDivider": 130,
     "progressModifier": 80,

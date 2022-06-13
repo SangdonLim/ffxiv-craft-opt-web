@@ -9565,6 +9565,222 @@
     "baseLevel": 60,
     "difficulty": 580,
     "durability": 70,
+    "id": "5407",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Monumentaltür",
+      "en": "Highland Classical Door",
+      "fr": "Porte classique coerthienne",
+      "ja": "クルザン・クラシックドア"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5384",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Holzhüttendach",
+      "en": "Highland Cottage Roof (Wood)",
+      "fr": "Toit de maisonnette en bois coerthienne",
+      "ja": "クルザン・ウッドコテージ・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5393",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Holzhüttenmauer",
+      "en": "Highland Cottage Wall (Wood)",
+      "fr": "Mur de maisonnette en bois coerthienne",
+      "ja": "クルザン・ウッドコテージ・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5409",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Parkettboden",
+      "en": "Highland Flooring",
+      "fr": "Parquet coerthien",
+      "ja": "クルザン・フローリング"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5387",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Holzhausdach",
+      "en": "Highland House Roof (Wood)",
+      "fr": "Toit de pavillon en bois coerthien",
+      "ja": "クルザン・ウッドハウス・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5396",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Holzhausmauer",
+      "en": "Highland House Wall (Wood)",
+      "fr": "Mur de pavillon en bois coerthien",
+      "ja": "クルザン・ウッドハウス・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5403",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Bogenfenster",
+      "en": "Highland Lancet Window",
+      "fr": "Fenêtre à lancette coerthienne",
+      "ja": "クルザン・ランセットウィンドウ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5390",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Holzresidenzdach",
+      "en": "Highland Mansion Roof (Wood)",
+      "fr": "Toit de villa en bois coerthienne",
+      "ja": "クルザン・ウッドレジデンス・ルーフ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5399",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Holzresidenzmauer",
+      "en": "Highland Mansion Wall (Wood)",
+      "fr": "Mur de villa en bois coerthienne",
+      "ja": "クルザン・ウッドレジデンス・ウォール"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5404",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Langfenster",
+      "en": "Highland Oblong Window",
+      "fr": "Fenêtre à croisée coerthienne",
+      "ja": "クルザン・オブロングウィンドウ"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5416",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Holzüberdachung",
+      "en": "Highland Wooden Awning",
+      "fr": "Auvent boisé coerthien",
+      "ja": "クルザン・ウッドオーニング"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
+    "id": "5405",
+    "level": 150,
+    "maxQuality": 2700,
+    "name": {
+      "de": "Coerthas-Holztür",
+      "en": "Highland Wooden Door",
+      "fr": "Porte boisée coerthienne",
+      "ja": "クルザン・ウッドドア"
+    },
+    "progressDivider": 70,
+    "qualityDivider": 50,
+    "suggestedControl": 553,
+    "suggestedCraftsmanship": 587
+  },
+  {
+    "baseLevel": 60,
+    "difficulty": 580,
+    "durability": 70,
     "id": "30969",
     "level": 150,
     "maxQuality": 1350,
@@ -14674,6 +14890,69 @@
     "baseLevel": 70,
     "difficulty": 1200,
     "durability": 70,
+    "id": "35005",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Stock des Meeresgottes",
+      "en": "Susano's Rapturous Cane",
+      "fr": "Khakkhara de Susano flamboyant",
+      "ja": "須佐之男錫杖【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
+    "id": "35001",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Langbogen des Meeresgottes",
+      "en": "Susano's Rapturous Greatbow",
+      "fr": "Grand arc de Susano flamboyant",
+      "ja": "須佐之男大弓【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
+    "id": "35000",
+    "level": 320,
+    "maxQuality": 4800,
+    "name": {
+      "de": "Pike des Meeresgottes",
+      "en": "Susano's Rapturous Pike",
+      "fr": "Longue lance de Susano flamboyante",
+      "ja": "須佐之男長矛【輝】"
+    },
+    "progressDivider": 90,
+    "progressModifier": 80,
+    "qualityDivider": 70,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 1220,
+    "suggestedCraftsmanship": 1320
+  },
+  {
+    "baseLevel": 70,
+    "difficulty": 1200,
+    "durability": 70,
     "id": "34017",
     "level": 320,
     "maxQuality": 4800,
@@ -17190,6 +17469,24 @@
   {
     "baseLevel": 80,
     "difficulty": 1780,
+    "durability": 60,
+    "id": "34921",
+    "level": 430,
+    "maxQuality": 3680,
+    "name": {
+      "de": "Akademisches Schreibset",
+      "en": "Aetheroconductive Quill",
+      "fr": "Matériel d'écriture scolaire",
+      "ja": "留学生用の筆記具"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "suggestedControl": 1733,
+    "suggestedCraftsmanship": 1866
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1780,
     "durability": 80,
     "id": "4710",
     "level": 430,
@@ -17873,6 +18170,25 @@
     "stars": 2,
     "suggestedControl": 1990,
     "suggestedCraftsmanship": 2140
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1900,
+    "durability": 60,
+    "id": "34922",
+    "level": 440,
+    "maxQuality": 3960,
+    "name": {
+      "de": "Akademisches Magie-Rüstzeug",
+      "en": "Aetheroconductive Focus",
+      "fr": "Fournitures scolaires magiques",
+      "ja": "留学生用の魔器"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "stars": 1,
+    "suggestedControl": 1860,
+    "suggestedCraftsmanship": 2000
   },
   {
     "baseLevel": 80,
@@ -19166,6 +19482,24 @@
   {
     "baseLevel": 81,
     "difficulty": 2000,
+    "durability": 60,
+    "id": "34923",
+    "level": 517,
+    "maxQuality": 4160,
+    "name": {
+      "de": "Ätherothermosdose",
+      "en": "Luncheon Coffer",
+      "fr": "Boîte à déjeuner magique",
+      "ja": "魔法のランチボックス"
+    },
+    "progressDivider": 121,
+    "qualityDivider": 105,
+    "suggestedControl": 2136,
+    "suggestedCraftsmanship": 2234
+  },
+  {
+    "baseLevel": 81,
+    "difficulty": 2000,
     "durability": 80,
     "id": "34712",
     "level": 517,
@@ -19193,6 +19527,24 @@
       "en": "Palm Lumber",
       "fr": "Madrier de palmier",
       "ja": "パーム材"
+    },
+    "progressDivider": 122,
+    "qualityDivider": 106,
+    "suggestedControl": 2238,
+    "suggestedCraftsmanship": 2336
+  },
+  {
+    "baseLevel": 82,
+    "difficulty": 2300,
+    "durability": 60,
+    "id": "34924",
+    "level": 520,
+    "maxQuality": 4560,
+    "name": {
+      "de": "Ätherionette",
+      "en": "Aetheroconductive Mammet",
+      "fr": "Poupée d'entraînement magique",
+      "ja": "特訓用の魔法人形"
     },
     "progressDivider": 122,
     "qualityDivider": 106,
@@ -19463,6 +19815,24 @@
       "en": "Rarefied Palm Bracelet",
       "fr": "Bracelets en palmier collectionnables",
       "ja": "収集用のパームブレスレット"
+    },
+    "progressDivider": 123,
+    "qualityDivider": 107,
+    "suggestedControl": 2340,
+    "suggestedCraftsmanship": 2438
+  },
+  {
+    "baseLevel": 83,
+    "difficulty": 2600,
+    "durability": 60,
+    "id": "34925",
+    "level": 525,
+    "maxQuality": 4960,
+    "name": {
+      "de": "Akademische Ausstattung",
+      "en": "School Supplies",
+      "fr": "Affaires de soutien scolaire",
+      "ja": "学習支援用の支給品"
     },
     "progressDivider": 123,
     "qualityDivider": 107,
@@ -20378,6 +20748,66 @@
     "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
+    "id": "5428",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Frisierkommode",
+      "en": "Classic Dresser",
+      "fr": "Coiffeuse classique",
+      "ja": "クラシックドレッサー"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5431",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Fernöstliches Himmelbett",
+      "en": "Eastern Canopy Bed",
+      "fr": "Lit à baldaquin oriental",
+      "ja": "イースタン・キャノピーベッド"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5442",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Ishgarder Fensterimitation",
+      "en": "Imitation Alpine Window",
+      "fr": "Imitation de fenêtre ishgardaise",
+      "ja": "イミテーション・イシュガルディアンウィンドウ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
     "id": "5176",
     "level": 560,
     "maxQuality": 7200,
@@ -20438,6 +20868,66 @@
     "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
+    "id": "5432",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Kwehkwehksuhr",
+      "en": "Kweh-kweh Clock",
+      "fr": "Horloge kwé-kwé",
+      "ja": "クェクェクロック"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5433",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Hölzerne Empore mit Beleuchtung",
+      "en": "Luminous Wooden Loft",
+      "fr": "Mezzanine en bois éclairée",
+      "ja": "ダウンライト・ウッドロフト"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5453",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Hölzernes Hochdeck",
+      "en": "Raised Wooden Deck",
+      "fr": "Terrasse en bois surélevée",
+      "ja": "レイズド・ウッドデッキ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
     "id": "34901",
     "level": 560,
     "maxQuality": 7200,
@@ -20446,6 +20936,46 @@
       "en": "Rarefied Integral Fishing Rod",
       "fr": "Canne à pêche en bois d'intégral collectionnable",
       "ja": "収集用のインテグラルフィッシングロッド"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5447",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Schlichtes Bogenfenster",
+      "en": "Simple Arched Window",
+      "fr": "Fenêtre en plein cintre simple",
+      "ja": "シンプルアーチウィンドウ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
+    "id": "5440",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Bücherregal-Geheimtür",
+      "en": "Trick Bookshelf Partition",
+      "fr": "Bibliothèque à porte secrète",
+      "ja": "ブックシェルフ・シークレットパーティション"
     },
     "progressDivider": 130,
     "progressModifier": 90,
@@ -20634,6 +21164,69 @@
       "en": "Classical Wristband of Slaying",
       "fr": "Poignet d'attaquant classique",
       "ja": "クラシカル・アタッカーリストバンド"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34971",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Angelrute",
+      "en": "Pactmaker's Fishing Rod",
+      "fr": "Canne à pêche des associés",
+      "ja": "パクトメーカー・フィッシングロッド"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34975",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Schleifrad",
+      "en": "Pactmaker's Grinding Wheel",
+      "fr": "Meule des associés",
+      "ja": "パクトメーカー・グラインディングホイール"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34977",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Spinnrad",
+      "en": "Pactmaker's Spinning Wheel",
+      "fr": "Rouet des associés",
+      "ja": "パクトメーカー・スピニングホイール"
     },
     "progressDivider": 130,
     "progressModifier": 80,
