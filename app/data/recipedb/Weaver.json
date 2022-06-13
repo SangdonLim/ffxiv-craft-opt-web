@@ -23359,6 +23359,24 @@
   {
     "baseLevel": 80,
     "difficulty": 1780,
+    "durability": 60,
+    "id": "34946",
+    "level": 430,
+    "maxQuality": 3680,
+    "name": {
+      "de": "Akademisches Schreibset",
+      "en": "Aetheroconductive Quill",
+      "fr": "Matériel d'écriture scolaire",
+      "ja": "留学生用の筆記具"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "suggestedControl": 1733,
+    "suggestedCraftsmanship": 1866
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1780,
     "durability": 80,
     "id": "4658",
     "level": 430,
@@ -23772,6 +23790,25 @@
     "stars": 2,
     "suggestedControl": 1990,
     "suggestedCraftsmanship": 2140
+  },
+  {
+    "baseLevel": 80,
+    "difficulty": 1900,
+    "durability": 60,
+    "id": "34947",
+    "level": 440,
+    "maxQuality": 3960,
+    "name": {
+      "de": "Akademisches Magie-Rüstzeug",
+      "en": "Aetheroconductive Focus",
+      "fr": "Fournitures scolaires magiques",
+      "ja": "留学生用の魔器"
+    },
+    "progressDivider": 110,
+    "qualityDivider": 90,
+    "stars": 1,
+    "suggestedControl": 1860,
+    "suggestedCraftsmanship": 2000
   },
   {
     "baseLevel": 80,
@@ -25681,6 +25718,24 @@
   {
     "baseLevel": 81,
     "difficulty": 2000,
+    "durability": 60,
+    "id": "34948",
+    "level": 517,
+    "maxQuality": 4160,
+    "name": {
+      "de": "Ätherothermosdose",
+      "en": "Luncheon Coffer",
+      "fr": "Boîte à déjeuner magique",
+      "ja": "魔法のランチボックス"
+    },
+    "progressDivider": 121,
+    "qualityDivider": 105,
+    "suggestedControl": 2136,
+    "suggestedCraftsmanship": 2234
+  },
+  {
+    "baseLevel": 81,
+    "difficulty": 2000,
     "durability": 80,
     "id": "34737",
     "level": 517,
@@ -25708,6 +25763,24 @@
       "en": "Almasty Serge",
       "fr": "Étoffe de serge d'almasty",
       "ja": "アルマスティサージ"
+    },
+    "progressDivider": 122,
+    "qualityDivider": 106,
+    "suggestedControl": 2238,
+    "suggestedCraftsmanship": 2336
+  },
+  {
+    "baseLevel": 82,
+    "difficulty": 2300,
+    "durability": 60,
+    "id": "34949",
+    "level": 520,
+    "maxQuality": 4560,
+    "name": {
+      "de": "Ätherionette",
+      "en": "Aetheroconductive Mammet",
+      "fr": "Poupée d'entraînement magique",
+      "ja": "特訓用の魔法人形"
     },
     "progressDivider": 122,
     "qualityDivider": 106,
@@ -25942,6 +26015,24 @@
       "en": "Rarefied Almasty Serge Gloves",
       "fr": "Gants en serge d'almasty collectionnables",
       "ja": "収集用のアルマスティグローブ"
+    },
+    "progressDivider": 123,
+    "qualityDivider": 107,
+    "suggestedControl": 2340,
+    "suggestedCraftsmanship": 2438
+  },
+  {
+    "baseLevel": 83,
+    "difficulty": 2600,
+    "durability": 60,
+    "id": "34950",
+    "level": 525,
+    "maxQuality": 4960,
+    "name": {
+      "de": "Akademische Ausstattung",
+      "en": "School Supplies",
+      "fr": "Affaires de soutien scolaire",
+      "ja": "学習支援用の支給品"
     },
     "progressDivider": 123,
     "qualityDivider": 107,
@@ -27157,6 +27248,26 @@
     "baseLevel": 90,
     "difficulty": 3500,
     "durability": 80,
+    "id": "5434",
+    "level": 560,
+    "maxQuality": 7200,
+    "name": {
+      "de": "Eulmore-Diwan",
+      "en": "Eulmoran Divan",
+      "fr": "Canapé eulmorien",
+      "ja": "ユールモア・ディヴァン"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "suggestedControl": 2635,
+    "suggestedCraftsmanship": 2805
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3500,
+    "durability": 80,
     "id": "34906",
     "level": 560,
     "maxQuality": 7200,
@@ -27219,6 +27330,27 @@
     "baseLevel": 90,
     "difficulty": 3700,
     "durability": 80,
+    "id": "35024",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Zugeknöpfte Universitäts-Jacke",
+      "en": "Buttoned Varsity Jacket",
+      "fr": "Jaque boutonnée universitaire",
+      "ja": "ボタンド・ヴァーシティジャケット"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
     "id": "34912",
     "level": 570,
     "maxQuality": 7400,
@@ -27248,6 +27380,90 @@
       "en": "Red Ribbon",
       "fr": "Ruban rouge",
       "ja": "レッドリボン"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
+    "id": "35022",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Universitäts-Hose",
+      "en": "Varsity Bottoms",
+      "fr": "Bas-de-corps universitaire",
+      "ja": "ヴァーシティ・ボトム"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
+    "id": "35020",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Universitäts-Ledermütze",
+      "en": "Varsity Flat Cap",
+      "fr": "Casquette classique universitaire",
+      "ja": "ヴァーシティ・フラットキャップ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
+    "id": "35021",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Universitäts-Jacke",
+      "en": "Varsity Jacket",
+      "fr": "Jaque universitaire",
+      "ja": "ヴァーシティ・ジャケット"
+    },
+    "progressDivider": 130,
+    "progressModifier": 90,
+    "qualityDivider": 115,
+    "qualityModifier": 80,
+    "stars": 1,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 3700,
+    "durability": 80,
+    "id": "35025",
+    "level": 570,
+    "maxQuality": 7400,
+    "name": {
+      "de": "Universitäts-Rock",
+      "en": "Varsity Skirt",
+      "fr": "Jupe universitaire",
+      "ja": "ヴァーシティ・スカート"
     },
     "progressDivider": 130,
     "progressModifier": 90,
@@ -27521,6 +27737,111 @@
       "en": "Classical Signifer's Culottes",
       "fr": "Culotte de signifer classique",
       "ja": "クラシカルシグニフェル・キュロット"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34988",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Mantel des Eifers",
+      "en": "Pactmaker's Coat of Gathering",
+      "fr": "Manteau des ressources des associés",
+      "ja": "パクトメーカー・ギャザラーコート"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34985",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Sarouel des Handwerks",
+      "en": "Pactmaker's Sarouel of Crafting",
+      "fr": "Saroual des créations des associés",
+      "ja": "パクトメーカー・クラフターサルエル"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34982",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Turban des Handwerks",
+      "en": "Pactmaker's Turban of Crafting",
+      "fr": "Turban des créations des associés",
+      "ja": "パクトメーカー・クラフターターバン"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34987",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Uschanka des Eifers",
+      "en": "Pactmaker's Ushanka of Gathering",
+      "fr": "Ouchanka des ressources des associés",
+      "ja": "パクトメーカー・ギャザラーウシャンカ"
+    },
+    "progressDivider": 130,
+    "progressModifier": 80,
+    "qualityDivider": 115,
+    "qualityModifier": 70,
+    "stars": 2,
+    "suggestedControl": 2703,
+    "suggestedCraftsmanship": 2924
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 4300,
+    "durability": 70,
+    "id": "34983",
+    "level": 590,
+    "maxQuality": 12800,
+    "name": {
+      "de": "Paktschließer-Weste des Handwerks",
+      "en": "Pactmaker's Vest of Crafting",
+      "fr": "Gilet des créations des associés",
+      "ja": "パクトメーカー・クラフターベスト"
     },
     "progressDivider": 130,
     "progressModifier": 80,
