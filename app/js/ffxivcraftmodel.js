@@ -77,12 +77,12 @@ function Synth(crafter, recipe, maxTrickUses, reliabilityIndex, useConditions, m
 
 Synth.prototype.calculateBaseProgressIncrease = function (levelDifference, craftsmanship) {
     var levelDifferenceFactor = levelDifference > 0 ? 1.0 : (this.recipe.progressModifier * Math.fround(0.01));
-    return Math.floor(((this.crafter.craftsmanship * 10.0) / this.recipe.progressDivider + 2.0) * levelDifferenceFactor)
+    return Math.floor(Math.fround(((this.crafter.craftsmanship * 10.0) / this.recipe.progressDivider + 2.0) * levelDifferenceFactor))
 };
 
 Synth.prototype.calculateBaseQualityIncrease = function (levelDifference, control) {
     var levelDifferenceFactor = levelDifference > 0 ? 1.0 : (this.recipe.qualityModifier * Math.fround(0.01));
-    return Math.floor(((this.crafter.control * 10.0) / this.recipe.qualityDivider + 35.0) * levelDifferenceFactor)
+    return Math.floor(Math.fround(((this.crafter.control * 10.0) / this.recipe.qualityDivider + 35.0) * levelDifferenceFactor))
 };
 
 function isActionEq(action1, action2) {
@@ -370,12 +370,12 @@ function ApplyModifiers(s, action, condition) {
     // Calculate base and modified progress gain
     var bProgressGain = s.synth.calculateBaseProgressIncrease(levelDifference, craftsmanship);
     bProgressGain = bProgressGain * Math.fround(actionProgress * progressIncreaseMultiplier);
-    bProgressGain = Math.floor(bProgressGain)
+    bProgressGain = Math.floor(Math.fround(bProgressGain))
 
     // Calculate base and modified quality gain
     var bQualityGain = s.synth.calculateBaseQualityIncrease(levelDifference, control);
     bQualityGain = bQualityGain * Math.fround(actionQuality * qualityIncreaseMultiplier);
-    bQualityGain = Math.floor(bQualityGain)
+    bQualityGain = Math.floor(Math.fround(bQualityGain))
 
     // Effects modifying quality gain directly
     if (isActionEq(action, AllActions.trainedEye)) {
@@ -642,8 +642,8 @@ function simSynth(individual, startState, assumeSuccess, verbose, debug, logOutp
         var qualityGain = condQualityIncreaseMultiplier * r.bQualityGain;
 
         // Floor gains at final stage before calculating expected value
-        progressGain = successProbability * Math.floor(progressGain);
-        qualityGain = successProbability * Math.floor(qualityGain);
+        progressGain = successProbability * Math.floor(Math.fround(progressGain));
+        qualityGain = successProbability * Math.floor(Math.fround(qualityGain));
 
         // Occur if a wasted action
         //==================================
@@ -820,8 +820,8 @@ function MonteCarloStep(startState, action, assumeSuccess, verbose, debug, logOu
     s.iqCnt = iqCnt;
     s.control = r.control;
     s.qualityGain = qualityGain;
-    s.bProgressGain = Math.floor(r.bProgressGain);
-    s.bQualityGain = Math.floor(r.bQualityGain);
+    s.bProgressGain = Math.floor(Math.fround(r.bProgressGain));
+    s.bQualityGain = Math.floor(Math.fround(r.bQualityGain));
     s.success = success;
     
     var time = s.step *3 - s.buffUses;
