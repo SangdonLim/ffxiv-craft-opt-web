@@ -13,38 +13,38 @@
   ];
 
   var actionIconDispatchInfo = {
-    basicSynth: {                                  },
-    basicTouch: {                                  },
-    mastersMend: {        common: true,            },
-    rapidSynthesis: {     common: true,            },
-    hastyTouch: {         common: true,            },
-    observe: {            common: true,            },
-    tricksOfTheTrade: {   common: true,            },
-    wasteNot: {           common: true, buff: true },
-    veneration: {         common: true, buff: true },
-    standardTouch: {                               },
-    greatStrides: {       common: true, buff: true },
-    innovation: {         common: true, buff: true },
-    basicSynth2: {                                 },
-    wasteNot2: {          common: true, buff: true },
-    byregotsBlessing: {   common: true,            },
-    preciseTouch: {                                },
-    muscleMemory: {       common: true,            },
-    carefulSynthesis: {   common: true,            },
-    rapidSynthesis2: {    common: true,            },
-    manipulation: {       common: true, buff: true },
-    prudentTouch: {                                },
-    focusedSynthesis: {                            },
-    focusedTouch: {                                },
-    reflect: {            common: true,            },
-    preparatoryTouch: {                            },
-    groundwork: {                                  },
-    delicateSynthesis: {                           },
-    intensiveSynthesis: {                          },
-    trainedEye: {         common: true,            },
-    advancedTouch: {                               },
-    prudentSynthesis: {                            },
-    trainedFinesse: {     common: true,            }
+    basicSynth: {                                                       },
+    basicTouch: {                                                       },
+    mastersMend: {        useCrafterClassAgnosticIcon: true,            },
+    rapidSynthesis: {     useCrafterClassAgnosticIcon: true,            },
+    hastyTouch: {         useCrafterClassAgnosticIcon: true,            },
+    observe: {            useCrafterClassAgnosticIcon: true,            },
+    tricksOfTheTrade: {   useCrafterClassAgnosticIcon: true,            },
+    wasteNot: {           useCrafterClassAgnosticIcon: true, buff: true },
+    veneration: {         useCrafterClassAgnosticIcon: true, buff: true },
+    standardTouch: {                                                    },
+    greatStrides: {       useCrafterClassAgnosticIcon: true, buff: true },
+    innovation: {         useCrafterClassAgnosticIcon: true, buff: true },
+    basicSynth2: {                                                      },
+    wasteNot2: {          useCrafterClassAgnosticIcon: true, buff: true },
+    byregotsBlessing: {   useCrafterClassAgnosticIcon: true,            },
+    preciseTouch: {                                                     },
+    muscleMemory: {       useCrafterClassAgnosticIcon: true,            },
+    carefulSynthesis: {   useCrafterClassAgnosticIcon: true,            },
+    rapidSynthesis2: {    useCrafterClassAgnosticIcon: true,            },
+    manipulation: {       useCrafterClassAgnosticIcon: true, buff: true },
+    prudentTouch: {                                                     },
+    focusedSynthesis: {                                                 },
+    focusedTouch: {                                                     },
+    reflect: {            useCrafterClassAgnosticIcon: true,            },
+    preparatoryTouch: {                                                 },
+    groundwork: {                                                       },
+    delicateSynthesis: {                                                },
+    intensiveSynthesis: {                                               },
+    trainedEye: {         useCrafterClassAgnosticIcon: true,            },
+    advancedTouch: {                                                    },
+    prudentSynthesis: {                                                 },
+    trainedFinesse: {     useCrafterClassAgnosticIcon: true,            }
   };
 
   var obsoleteActions = {
@@ -81,7 +81,7 @@
       var imagePaths = {};
       for (var j = 0; j < allClasses.length; j++) {
         var thisCrafterClass = allClasses[j];
-        if (iconInfo.common) {
+        if (iconInfo.useCrafterClassAgnosticIcon) {
           imagePaths[thisCrafterClass] = 'img/actions/' + shortName + '.png';
         } else {
           imagePaths[thisCrafterClass] = 'img/actions/' + thisCrafterClass + '/' + shortName + '.png';
