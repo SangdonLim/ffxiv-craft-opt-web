@@ -49,10 +49,6 @@
           autoStart: null
         }
       })
-      .state('instructions', {
-        url: '/instructions',
-        templateUrl: 'views/instructions.html'
-      })
       .state('about', {
         url: '/about',
         templateUrl: 'views/about.html'
