@@ -73,16 +73,16 @@
 
   for (var shortName in actionIconDispatchInfo) {
     if (actionIconDispatchInfo.hasOwnProperty(shortName)) {
-      var extraInfo = actionIconDispatchInfo[shortName];
+      var iconInfo = actionIconDispatchInfo[shortName];
       var action = AllActions[shortName];
 
-      action.buff = extraInfo.buff;
-      action.skillID = extraInfo.skillID;
+      action.buff = iconInfo.buff;
+      action.skillID = iconInfo.skillID;
       var imagePaths = {};
       for (var j = 0; j < allClasses.length; j++) {
         var cls = allClasses[j];
         if (action.cls == 'All') {
-          if (extraInfo.common) {
+          if (iconInfo.common) {
             imagePaths[cls] = 'img/actions/' + shortName + '.png';
           }
           else {
