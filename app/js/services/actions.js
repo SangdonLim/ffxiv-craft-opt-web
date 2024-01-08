@@ -80,11 +80,11 @@
       action.skillID = iconInfo.skillID;
       var imagePaths = {};
       for (var j = 0; j < allClasses.length; j++) {
-        var cls = allClasses[j];
+        var thisCrafterClass = allClasses[j];
         if (iconInfo.common) {
-          imagePaths[cls] = 'img/actions/' + shortName + '.png';
+          imagePaths[thisCrafterClass] = 'img/actions/' + shortName + '.png';
         } else {
-          imagePaths[cls] = 'img/actions/' + cls + '/' + shortName + '.png';
+          imagePaths[thisCrafterClass] = 'img/actions/' + thisCrafterClass + '/' + shortName + '.png';
         }
         action.imagePaths = imagePaths;
       }
