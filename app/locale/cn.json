@@ -113,7 +113,6 @@
   "POPULATION_INFO": "这里设置求解器生成每一代种群的个体样本数。增加这个数字会增加每一代产生的种群样本，提高找到更好的工序的机会，但会占用更长的运算时间。（默认值：300）",
   "POPULATION_OPTIONS": "种群规模",
   "Preparatory Touch": "坯料加工",
-  "PROBABILISTIC_SIM": "概率模拟",
   "PROGRESS": "进展",
   "Prudent Touch": "俭约加工",
   "Quality": "加工",

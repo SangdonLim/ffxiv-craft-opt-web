@@ -111,7 +111,6 @@
   "POPULATION_INFO": "유전 알고리즘에서 각 세대 내의 개체 수를 설정합니다. 숫자가 많을수록 각 세대 내 개체들이 다양해져, 더 좋은 개체(매크로)를 얻기 쉬워집니다. 계산이 느려집니다.",
   "POPULATION_OPTIONS": "세대 내 개체 수:",
   "Preparatory Touch": "밑가공",
-  "PROBABILISTIC_SIM": "기대값 시뮬레이션",
   "PROGRESS": "작업량",
   "Prudent Touch": "절약 가공",
   "Quality": "품질",

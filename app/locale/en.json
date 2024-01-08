@@ -82,7 +82,6 @@
   "PENALTY_OPTIONS": "Penalty Weight:",
   "POPULATION_INFO": "The number of sequences in each generation. Increasing this number increases the amount of variance in each generation, improving the chances of finding a better sequence, but makes the solver run slower.",
   "POPULATION_OPTIONS": "Population:",
-  "PROBABILISTIC_SIM": "Probalistic Sim",
   "PROGRESS": "Progress",
   "QUALITY": "Quality",
   "RECIPE_SEARCH": "Search...",

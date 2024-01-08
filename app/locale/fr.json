@@ -108,7 +108,6 @@
   "POPULATION_INFO": "Nombre de séquences à chaque génération. Augmenter ce nombre fera progresser la variation à chaque génération, augmentant les chances de trouver une meilleure séquence, mais rendra la simulation plus lente.",
   "POPULATION_OPTIONS": "Population :",
   "Preparatory Touch": "Ouvrage préparatoire",
-  "PROBABILISTIC_SIM": "Simulation probabiliste",
   "PROGRESS": "Progression",
   "Prudent Touch": "Ouvrage parcimonieux",
   "Quality": "Qualité",

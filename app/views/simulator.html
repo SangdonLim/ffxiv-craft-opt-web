@@ -144,10 +144,6 @@
                                                ng-click="$emit('simulation.needs.update')"></i></tab-heading>
         <pre>{{simulatorStatus.monteCarlo.logText}}</pre>
       </tab>
-      <tab active="logTabs.probabilistic.active">
-        <tab-heading>{{ 'PROBABILISTIC_SIM' | translate}}</tab-heading>
-        <pre>{{simulatorStatus.probabilistic.logText}}</pre>
-      </tab>
       <tab active="logTabs.macro.active">
         <tab-heading>{{ 'MACRO' | translate}}</tab-heading>
         <macros sequence="sequence" cls="recipe.cls" options="macroOptions"></macros>

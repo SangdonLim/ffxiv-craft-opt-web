@@ -87,9 +87,6 @@
     </div>
     <div class="row-fluid">
         <tabset>
-            <tab heading="{{ 'PROBABILISTIC_SIM' | translate }}" active="logTabs.ga.active">
-                <pre>{{pageState.solverStatus.logs.ga}}</pre>
-            </tab>
             <tab active="logTabs.mc.active">
                 <tab-heading>{{ 'MONTE_CARLO_SIM' | translate}} &nbsp; <i class="fa fa-refresh flat-button"
                                                                           ng-click="runMonteCarloSim(pageState.solverStatus.sequence)"></i>

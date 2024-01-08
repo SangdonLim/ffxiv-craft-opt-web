@@ -111,7 +111,6 @@
   "POPULATION_INFO": "The number of sequences in each generation. Increasing this number increases the amount of variance in each generation, improving the chances of finding a better sequence, but makes the solver run slower.",
   "POPULATION_OPTIONS": "Population:",
   "Preparatory Touch": "Trabajo Preparatorio",
-  "PROBABILISTIC_SIM": "Probalistic Sim",
   "PROGRESS": "Progreso",
   "Prudent Touch": "Obra Frugal",
   "Quality": "Calidad",
