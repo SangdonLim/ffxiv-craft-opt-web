@@ -83,7 +83,6 @@
   "LEVEL": "等级",
   "Loading...": "加载中...",
   "LOADING": "加载中...",
-  "MACRO_CTRL": "单击下方模块，使用Ctrl+C或者Command+C将所选内容制到剪贴板。",
   "MACRO_IMPORT_INFO": "<b>请把宏指令粘贴到下面的框中</b>。您也可以把多个宏指令按顺序粘贴在这里并一次性导入，不包含“<samp>/ac</samp>”或者“<samp>/action</samp>”的指令行会被自动过滤。",
   "MACRO_IMPORT": "导入宏指令",
   "MACRO_INCLUDE_LOCK": "在每个宏指令的开头包含“锁定宏指令（/macrolock）”，以保护该宏在执行完毕前不会被其他操作打断。",
