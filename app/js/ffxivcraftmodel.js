@@ -238,21 +238,18 @@ function ApplyModifiers(s, action) {
 
     if (isActionEq(action, AllActions.muscleMemory)) {
         if (s.step !== 1) {
-            s.wastedActions += 1;
-            actionProgress = 0;
+            s.cpState = -9999;
         }
     }
     if (isActionEq(action, AllActions.reflect)) {
         if (s.step !== 1) {
-            s.wastedActions += 1;
-            actionQuality = 0;
+            s.cpState = -9999;
         }
     }
 
     if (isActionEq(action, AllActions.trainedFinesse)) {
         if (s.effects.countUps['innerQuiet'] !== 10) {
-            s.wastedActions += 1;
-            actionQuality = 0;
+            s.cpState = -9999;
         }
     }
 
@@ -331,9 +328,7 @@ function ApplyModifiers(s, action) {
             bQualityGain = s.synth.recipe.maxQuality;
         }
         else {
-            s.wastedActions += 1;
-            bQualityGain = 0;
-            cpCost = 0;
+            s.cpState = -9999;
         }
     }
 
@@ -371,7 +366,7 @@ function ApplySpecialActionEffects(s, action) {
             delete s.effects.countUps['innerQuiet'];
         }
         else {
-            s.wastedActions += 1;
+            s.cpState = -9999;
         }
     }
 
@@ -379,7 +374,7 @@ function ApplySpecialActionEffects(s, action) {
         if (s.step == 1) {
             s.effects.countUps['innerQuiet'] = 1;
         } else {
-            s.wastedActions += 1;
+            s.cpState = -9999;
         }
     }
 
