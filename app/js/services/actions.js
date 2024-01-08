@@ -12,7 +12,7 @@
     "Weaver"
   ];
 
-  var extraActionInfo = {
+  var actionIconDispatchInfo = {
     basicSynth: {                                  },
     basicTouch: {                                  },
     mastersMend: {        common: true,            },
@@ -71,9 +71,9 @@
   var actionsByName = {};
   var allActions = [];
 
-  for (var shortName in extraActionInfo) {
-    if (extraActionInfo.hasOwnProperty(shortName)) {
-      var extraInfo = extraActionInfo[shortName];
+  for (var shortName in actionIconDispatchInfo) {
+    if (actionIconDispatchInfo.hasOwnProperty(shortName)) {
+      var extraInfo = actionIconDispatchInfo[shortName];
       var action = AllActions[shortName];
 
       action.buff = extraInfo.buff;
