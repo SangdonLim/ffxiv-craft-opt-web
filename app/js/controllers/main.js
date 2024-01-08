@@ -6,13 +6,12 @@
     .controller('MainController', controller);
 
   function controller($scope, $rootScope, $q, $modal, $translate, $location, _allClasses, _actionGroups, _actionsByName,
-    _profile, _localStorage, _tooltips, _getActionImagePath, _bonusStats, _languages, _iActionClassSpecific)
+    _profile, _localStorage, _tooltips, _getActionImagePath, _bonusStats, _languages)
   {
     $scope.allClasses = _allClasses;
     $scope.actionGroups = _actionGroups;
     $scope.allActions = _actionsByName;
     $scope.getActionImagePath = _getActionImagePath;
-    $scope.iActionClassSpecific = _iActionClassSpecific;
 
     $scope.changeLang = changeLang;
     $scope.currentLang = currentLang;

@@ -24,14 +24,9 @@
     for (var i = 0; i < this._allActions.length; i++) {
       var action = this._allActions[i];
       if (action.skillID) {
-        if (action.cls === 'All') {
-          for (var j = 0; j < this._allClasses.length; j++) {
-            var cls = this._allClasses[j];
-            this.actionTooltips[cls + action.shortName] = this.renderTooltip(action);
-          }
-        }
-        else {
-          this.actionTooltips[action.cls + action.shortName] = this.renderTooltip(action);
+        for (var j = 0; j < this._allClasses.length; j++) {
+          var cls = this._allClasses[j];
+          this.actionTooltips[cls + action.shortName] = this.renderTooltip(action);
         }
       }
     }

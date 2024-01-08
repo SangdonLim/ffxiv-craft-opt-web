@@ -146,7 +146,7 @@
         var actions = _actionGroups[i].actions;
         for (var j = 0; j < actions.length; j++) {
           var action = _actionsByName[actions[j]];
-          var actionClass = action.cls === "All" ? cls : action.cls;
+          var actionClass = cls;
 
           // Skip specialist actions if the class is not marked as a specialist
           if (specialistActions.indexOf(action.shortName) >= 0 && !$scope.crafter.stats[actionClass].specialist) {

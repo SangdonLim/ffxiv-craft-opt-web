@@ -5,11 +5,10 @@
     .module('ffxivCraftOptWeb.controllers')
     .controller('SequenceEditorController', controller);
 
-  function controller($scope, $http, $state, _actionGroups, _actionsByName, _simulator, _getActionImagePath, _iActionClassSpecific, $translate) {
+  function controller($scope, $http, $state, _actionGroups, _actionsByName, _simulator, _getActionImagePath, $translate) {
     $scope.actionGroups = _actionGroups;
     $scope.allActions = _actionsByName;
     $scope.getActionImagePath = _getActionImagePath;
-    $scope.iActionClassSpecific = _iActionClassSpecific;
 
     $scope.origSequence = [];
     $scope.editSequence = [];

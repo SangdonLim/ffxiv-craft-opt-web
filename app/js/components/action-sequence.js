@@ -22,11 +22,10 @@
     }
   }
 
-  function controller($scope, _actionsByName, _tooltips, _getActionImagePath, _iActionClassSpecific) {
+  function controller($scope, _actionsByName, _tooltips, _getActionImagePath) {
     $scope.getActionImagePath = _getActionImagePath;
     $scope.cssClassesForAction = cssClassesForAction;
     $scope.actionForName = actionForName;
-    $scope.iActionClassSpecific = _iActionClassSpecific;
 
     $scope.actionTooltips = {};
 
@@ -41,12 +40,7 @@
       var newTooltips = {};
       angular.forEach(_actionsByName, function (actionInfo) {
         var key;
-        if (actionInfo.cls != 'All') {
-          key = actionInfo.cls + actionInfo.shortName;
-        }
-        else {
-          key = $scope.cls + actionInfo.shortName;
-        }
+        key = $scope.cls + actionInfo.shortName;
         newTooltips[actionInfo.shortName] = _tooltips.actionTooltips[key];
       });
       $scope.actionTooltips = newTooltips;

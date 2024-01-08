@@ -20,7 +20,7 @@
     }
   }
 
-  function controller($scope, $translate, _actionsByName, _allActions, _iActionClassSpecific) {
+  function controller($scope, $translate, _actionsByName, _allActions) {
     $scope.macroList = [];
 
     $scope.$on('$translateChangeSuccess', update);
