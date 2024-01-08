@@ -81,16 +81,10 @@
       var imagePaths = {};
       for (var j = 0; j < allClasses.length; j++) {
         var cls = allClasses[j];
-        if (action.cls == 'All') {
-          if (iconInfo.common) {
-            imagePaths[cls] = 'img/actions/' + shortName + '.png';
-          }
-          else {
-            imagePaths[cls] = 'img/actions/' + cls + '/' + shortName + '.png';
-          }
-        }
-        else {
-          imagePaths[cls] = 'img/actions/' + action.cls + '/' + shortName + '.png';
+        if (iconInfo.common) {
+          imagePaths[cls] = 'img/actions/' + shortName + '.png';
+        } else {
+          imagePaths[cls] = 'img/actions/' + cls + '/' + shortName + '.png';
         }
         action.imagePaths = imagePaths;
       }
