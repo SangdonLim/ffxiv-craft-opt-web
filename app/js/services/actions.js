@@ -13,7 +13,7 @@
   ];
 
   var actionIconDispatchInfo = {
-    basicSynth: {                                                       },
+    basicSynthesis: {                                                   },
     basicTouch: {                                                       },
     mastersMend: {        useCrafterClassAgnosticIcon: true,            },
     rapidSynthesis: {     useCrafterClassAgnosticIcon: true,            },
@@ -24,12 +24,10 @@
     standardTouch: {                                                    },
     greatStrides: {       useCrafterClassAgnosticIcon: true, buff: true },
     innovation: {         useCrafterClassAgnosticIcon: true, buff: true },
-    basicSynth2: {                                                      },
     wasteNot2: {          useCrafterClassAgnosticIcon: true, buff: true },
     byregotsBlessing: {   useCrafterClassAgnosticIcon: true,            },
     muscleMemory: {       useCrafterClassAgnosticIcon: true,            },
     carefulSynthesis: {   useCrafterClassAgnosticIcon: true,            },
-    rapidSynthesis2: {    useCrafterClassAgnosticIcon: true,            },
     manipulation: {       useCrafterClassAgnosticIcon: true, buff: true },
     prudentTouch: {                                                     },
     focusedSynthesis: {                                                 },
@@ -84,11 +82,9 @@
     },
     {
       name: "Synthesis", actions: [
-        "basicSynth",
+        "basicSynthesis",
         "rapidSynthesis",
-        "basicSynth2",
         "carefulSynthesis",
-        "rapidSynthesis2",
         "focusedSynthesis",
         "groundwork",
         "prudentSynthesis"

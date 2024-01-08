@@ -27,7 +27,7 @@ function Action(shortName, name, durabilityCost, cpCost, successProbability, qua
 //   aType, activeTurns, level
 var AllActions = {
     dummyAction: new Action(        'dummyAction',        '______________',       0,   0, 1.0,  0.0, 0.0, 'immediate', 1,  1),
-    basicSynth: new Action(         'basicSynth',         'Basic Synthesis',     10,   0, 1.0,  0.0, 1.0, 'immediate', 1,  1),
+    basicSynthesis: new Action(     'basicSynthesis',     'Basic Synthesis',     10,   0, 1.0,  0.0, 1.0, 'immediate', 1,  1),
     basicTouch: new Action(         'basicTouch',         'Basic Touch',         10,  18, 1.0,  1.0, 0.0, 'immediate', 1,  5),
     mastersMend: new Action(        'mastersMend',        'Master\'s Mend',       0,  88, 1.0,  0.0, 0.0, 'immediate', 1,  7),
     rapidSynthesis: new Action(     'rapidSynthesis',     'Rapid Synthesis',     10,   0, 0.5,  0.0, 2.5, 'immediate', 1,  9),
@@ -38,12 +38,10 @@ var AllActions = {
     standardTouch: new Action(      'standardTouch',      'Standard Touch',      10,  32, 1.0, 1.25, 0.0, 'immediate', 1, 18),
     greatStrides: new Action(       'greatStrides',       'Great Strides',        0,  32, 1.0,  0.0, 0.0, 'countdown', 3, 21),
     innovation: new Action(         'innovation',         'Innovation',           0,  18, 1.0,  0.0, 0.0, 'countdown', 4, 26),
-    basicSynth2: new Action(        'basicSynth2',        'Basic Synthesis',     10,   0, 1.0,  0.0, 1.2, 'immediate', 1, 31),
     wasteNot2: new Action(          'wasteNot2',          'Waste Not II',         0,  98, 1.0,  0.0, 0.0, 'countdown', 8, 47),
     byregotsBlessing: new Action(   'byregotsBlessing',   'Byregot\'s Blessing', 10,  24, 1.0,  1.0, 0.0, 'immediate', 1, 50),
     muscleMemory: new Action(       'muscleMemory',       'Muscle Memory',       10,   6, 1.0,  0.0, 3.0, 'countdown', 5, 54),
     carefulSynthesis: new Action(   'carefulSynthesis',   'Careful Synthesis',   10,   7, 1.0,  0.0, 1.5, 'immediate', 1, 62),
-    rapidSynthesis2: new Action(    'rapidSynthesis2',    'Rapid Synthesis',     10,   0, 0.5,  0.0, 5.0, 'immediate', 1, 63),
     manipulation: new Action(       'manipulation',       'Manipulation',         0,  96, 1.0,  0.0, 0.0, 'countdown', 8, 65),
     prudentTouch: new Action(       'prudentTouch',       'Prudent Touch',        5,  25, 1.0,  1.0, 0.0, 'immediate', 1, 66),
     focusedSynthesis: new Action(   'focusedSynthesis',   'Focused Synthesis',   10,   5, 0.5,  0.0, 2.0, 'immediate', 1, 67),

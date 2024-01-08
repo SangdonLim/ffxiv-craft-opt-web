@@ -40,14 +40,6 @@
         }
       }
 
-      // Upgrade existing synths with new settings
-      for (name in this.synths) {
-        var synth = this.synths[name];
-        for (var i = 0; i < synth.sequence.length; i++){
-          if (synth.sequence[i] === "standardSynthesis") synth.sequence[i] = "basicSynth2";
-        }
-      }
-
       if (this.storage.hasKey('crafterStats')) {
         this.crafterStats = this.storage.get('crafterStats');
       }
@@ -70,7 +62,7 @@
               craftsmanship: 24,
               control: 0,
               cp: 180,
-              actions: ['basicSynth']
+              actions: ['basicSynthesis']
             }
           }
 

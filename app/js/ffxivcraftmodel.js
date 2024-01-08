@@ -228,13 +228,20 @@ function ApplyModifiers(s, action) {
         }
     }
 
+    // Upgrade actions based on level
+    if (isActionEq(action, AllActions.basicSynthesis) && s.synth.crafter.level >= 31) {
+        actionProgress = 1.2;
+    }
+    if (isActionEq(action, AllActions.rapidSynthesis) && s.synth.crafter.level >= 63) {
+        actionProgress = 5.0;
+    }
+    if (isActionEq(action, AllActions.carefulSynthesis) && s.synth.crafter.level >= 82) {
+        actionProgress = 1.8;
+    }
     if (isActionEq(action, AllActions.groundwork) && s.synth.crafter.level >= 86) {
         actionProgress = 3.6;
     }
 
-    if (isActionEq(action, AllActions.carefulSynthesis) && s.synth.crafter.level >= 82) {
-        actionProgress = 1.8;
-    }
 
     if (isActionEq(action, AllActions.muscleMemory)) {
         if (s.step !== 1) {
@@ -1067,7 +1074,7 @@ function heuristicSequenceBuilder(synth) {
     var effRecipeLevel = synth.recipe.level;
 
     // If Careful Synthesis 1 is available, use it
-    var preferredAction = 'basicSynth';
+    var preferredAction = 'basicSynthesis';
     // TODO: standardSynth AKA Basic Synthesis Level 31
     if (hasAction('carefulSynthesis')) {
         preferredAction = 'carefulSynthesis';
