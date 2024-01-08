@@ -133,7 +133,7 @@
     function selectActionsByLevel(cls) {
       selectActions(cls, false);
     }
-    
+
     function selectActionsGuaranteed(cls) {
       selectActions(cls, true);
     }
@@ -155,7 +155,7 @@
 
           // If we care about level and the action's level is too high, skip it.
           if (action.level > $scope.crafter.stats[actionClass].level) continue;
-          
+
           // If we care about successRate and the successRate is too low, skip it.
           if (bySuccessRate && action.successProbability < 1) continue;
 
@@ -164,7 +164,7 @@
           if (bySuccessRate && action.onExcellent) continue;
           if (bySuccessRate && action.onPoor) continue;
 
-          // Some actions are upgraded versions of others.  
+          // Some actions are upgraded versions of others.
           // If this is one of the base versions and our level is high enough to use the upgraded version, skip it.
           if (action.shortName === "rapidSynthesis" && $scope.crafter.stats[actionClass].level >= 63) continue;
           if (action.shortName === "basicSynth" && $scope.crafter.stats[actionClass].level >= 31) continue;

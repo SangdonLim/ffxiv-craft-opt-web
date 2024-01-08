@@ -158,7 +158,7 @@ State.prototype.checkViolations = function () {
     if (this.reliability >= this.synth.reliabilityIndex) {
         reliabilityOk = true;
     }
-    
+
     return {
         progressOk: progressOk,
         cpOk: cpOk,
@@ -316,7 +316,7 @@ function ApplyModifiers(s, action, condition) {
         }
         else if (isActionEq(action, AllActions.prudentSynthesis)) {
             actionProgress = 0;
-        }        
+        }
         else {
             durabilityCost *= 0.5;
         }
@@ -823,7 +823,7 @@ function MonteCarloStep(startState, action, assumeSuccess, verbose, debug, logOu
     s.bProgressGain = Math.floor(Math.fround(r.bProgressGain));
     s.bQualityGain = Math.floor(Math.fround(r.bQualityGain));
     s.success = success;
-    
+
     var time = s.step *3 - s.buffUses;
 
     if (debug) {
@@ -1440,8 +1440,8 @@ function heuristicSequenceBuilder(synth) {
 
     if (tryAction('reflect')) {
         pushAction(subSeq1, 'reflect')
-    } 
-    
+    }
+
     preferredAction = 'basicTouch';
 
     // ... and put in at least one quality improving action

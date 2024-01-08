@@ -39,7 +39,7 @@
           this.storage.remove('savedSettings');
         }
       }
-      
+
       // Upgrade existing synths with new settings
       for (name in this.synths) {
         var synth = this.synths[name];

@@ -44,7 +44,7 @@
     reflect: {                 common: true,             skillID: {"Alchemist": 100281, "Armorer": 100277, "Blacksmith": 100276, "Carpenter": 100275, "Culinarian": 100282, "Goldsmith": 100278, "Leatherworker": 100279, "Weaver": 100280} },
 
     // Shadowbringers
-    preparatoryTouch: {                                  skillID: {"Alchemist": 100305, "Armorer": 100301, "Blacksmith": 100300, "Carpenter": 100299, "Culinarian": 100306, "Goldsmith": 100302, "Leatherworker": 100303, "Weaver": 100304} },    
+    preparatoryTouch: {                                  skillID: {"Alchemist": 100305, "Armorer": 100301, "Blacksmith": 100300, "Carpenter": 100299, "Culinarian": 100306, "Goldsmith": 100302, "Leatherworker": 100303, "Weaver": 100304} },
     groundwork: {                                        skillID: {"Alchemist": 100337, "Armorer": 100333, "Blacksmith": 100332, "Carpenter": 100331, "Culinarian": 100338, "Goldsmith": 100334, "Leatherworker": 100335, "Weaver": 100336} },
     delicateSynthesis: {                                 skillID: {"Alchemist": 100329, "Armorer": 100325, "Blacksmith": 100324, "Carpenter": 100323, "Culinarian": 100330, "Goldsmith": 100326, "Leatherworker": 100327, "Weaver": 100328} },
     intensiveSynthesis: {                                skillID: {"Alchemist": 100321, "Armorer": 100317, "Blacksmith": 100316, "Carpenter": 100315, "Culinarian": 100322, "Goldsmith": 100318, "Leatherworker": 100319, "Weaver": 100320} },
