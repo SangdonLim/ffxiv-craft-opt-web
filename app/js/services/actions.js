@@ -48,24 +48,7 @@
   };
 
   var obsoleteActions = {
-    byregotsBrow: true,
-    brandOfEarth: true,
-    brandOfFire: true,
-    brandOfIce: true,
-    brandOfLightning: true,
-    brandOfWater: true,
-    brandOfWind: true,
-    nameOfEarth: true,
-    nameOfFire: true,
-    nameOfIce: true,
-    nameOfLightning: true,
-    nameOfWater: true,
-    nameOfWind: true,
-    flawlessSynthesis: true,
     innerQuiet: true,
-    brandOfTheElements: true,
-    nameOfTheElements: true,
-    patientTouch: true,
   };
 
   var actionsByName = {};

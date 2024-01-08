@@ -96,7 +96,6 @@ function isActionNe(action1, action2) {
 function EffectTracker() {
     this.countUps = {};
     this.countDowns = {};
-    this.indefinites = {};
 }
 
 function State(synth, step, lastStep, action, durabilityState, cpState, bonusMaxCp, qualityState, progressState, wastedActions, trickUses, buffUses, reliability, effects, condition, touchCombo) {
@@ -517,20 +516,6 @@ function UpdateEffectCounters(s, action, condition, successProbability, qualityG
     // Initialize new effects after countdowns are managed to reset them properly
     if (action.type === 'countup') {
         s.effects.countUps[action.shortName] = 0;
-    }
-
-    if (action.type === 'indefinite') {
-        if (isActionEq(action, AllActions.initialPreparations)) {
-            if (s.step == 1) {
-                s.effects.indefinites[action.shortName] = true;
-            }
-            else {
-                s.wastedActions += 1;
-            }
-        }
-        else {
-            s.effects.indefinites[action.shortName] = true;
-        }
     }
 
     if (action.type === 'countdown') {
