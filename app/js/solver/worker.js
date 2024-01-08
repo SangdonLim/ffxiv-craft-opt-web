@@ -52,10 +52,6 @@ function start(settings) {
     Math.seed = seed;
   }
 
-  if (settings.maxLength > 0) {
-    logOutput.write("WARNING: Maximum length limit of %d is in effect!\n\n".sprintf(settings.maxLength));
-  }
-
   var crafterActions = [];
 
   logOutput.write("Seed: %d\n\
@@ -145,8 +141,7 @@ Settings:\n\
       settings.recipe.suggestedCraftsmanship, settings.recipe.suggestedControl,
       settings.recipe.progressDivider, settings.recipe.qualityDivider,
       settings.recipe.progressModifier, settings.recipe.qualityModifier);
-  var synth = new Synth(crafter, recipe, settings.reliabilityPercent/100.0,
-    settings.maxLength);
+  var synth = new Synth(crafter, recipe, settings.reliabilityPercent/100.0);
 
   var sequence = [];
 

@@ -66,11 +66,10 @@ function Recipe(baseLevel, level, difficulty, durability, startQuality, maxQuali
     this.qualityModifier = qualityModifier || 100;
 }
 
-function Synth(crafter, recipe, reliabilityIndex, maxLength) {
+function Synth(crafter, recipe, reliabilityIndex) {
     this.crafter = crafter;
     this.recipe = recipe;
     this.reliabilityIndex = reliabilityIndex;
-    this.maxLength = maxLength;
 }
 
 Synth.prototype.calculateBaseProgressIncrease = function (levelDifference, craftsmanship) {
@@ -994,12 +993,8 @@ function evalSeq(individual, mySynth, penaltyWeight, qualityPercentTarget) {
         penalties += Math.abs(mySynth.reliabilityIndex - result.reliability);
     }
 
-    if (mySynth.maxLength > 0) {
-        var maxActionsExceeded = individual.length - mySynth.maxLength;
-        if (maxActionsExceeded > 0) {
-            penalties += 0.1 * maxActionsExceeded;
-        }
-    }
+    // penalize longer sequences
+    penalties += 0.1 * individual.length;
 
     var totalTime = individual.length * 3 - result.buffUses
 

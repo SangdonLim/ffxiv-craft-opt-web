@@ -153,7 +153,6 @@
         algorithm: $scope.solver.algorithm,
         maxMontecarloRuns: $scope.sequenceSettings.maxMontecarloRuns,
         reliabilityPercent: $scope.sequenceSettings.reliabilityPercent,
-        maxLength: $scope.sequenceSettings.maxLengthEnabled ? $scope.sequenceSettings.maxLength : 0,
         solver: $scope.solver,
         debug: $scope.sequenceSettings.debug
       };

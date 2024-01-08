@@ -39,25 +39,6 @@
                 </div>
               </div>
 
-              <div class="control-group">
-                <div class="controls">
-                  <label class="checkbox" tooltip="{{ 'LIMIT_MAX_LENGTH_INFO' | translate }}" tooltip-placement="right">
-                    <input type="checkbox" ng-model="sequenceSettings.maxLengthEnabled"/>{{ 'LIMIT_MAX_LENGTH' | translate }}
-                  </label>
-                </div>
-              </div>
-
-              <div class="control-group" ng-class="{error: sequenceSettings.maxLengthEnabled && solverOptionsForm.maxLength.$invalid}">
-                <label class="control-label">{{ 'MAX_LENGTH' | translate }}</label>
-
-                <div class="controls">
-                  <input class="input-small" type="number" name="maxLength" ng-model="sequenceSettings.maxLength"
-                         ng-disabled="!sequenceSettings.maxLengthEnabled" min="1" ng-required="sequenceSettings.maxLengthEnabled"
-                         tooltip="{{ 'MAX_LENGTH_INFO' | translate }}"
-                         tooltip-placement="right"/>
-                </div>
-              </div>
-
             </div>
             <div class="span6">
 
