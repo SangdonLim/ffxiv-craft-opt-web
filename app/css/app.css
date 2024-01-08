@@ -90,6 +90,11 @@ legend small > .light {
   text-align: center;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+}
+
 @media (max-width: 320px) {
   .recipe-search-control .my-dropdown-menu {
     position: fixed;
