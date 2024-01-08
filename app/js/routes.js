@@ -6,7 +6,7 @@
     .config(Routes);
 
   function Routes($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/simulator');
+    $urlRouterProvider.otherwise('/solver');
 
     $stateProvider
       .state('crafter-attributes', {

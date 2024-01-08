@@ -41,10 +41,10 @@
       navBarCollapsed: true,
       options: {
         tabs: {
-          simulator: {
+          solver: {
             active: true
           },
-          solver: {
+          simulator: {
             active: false
           },
           macro: {
