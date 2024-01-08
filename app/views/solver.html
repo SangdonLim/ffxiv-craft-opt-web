@@ -75,16 +75,6 @@
         </div>
     </div>
     <div class="row-fluid">
-        <div ng-show="pageState.solverStatus.running">
-            <h5>{{ 'WORKING_IN_PROGRESS' | translate }}</h5>
-            <div class="sequence well well-small">
-                <progressbar class="progress-striped active"
-                             animate="false"
-                             value="pageState.solverStatus.generationsCompleted/pageState.solverStatus.maxGenerations*100">
-                    {{pageState.solverStatus.generationsCompleted}}/{{pageState.solverStatus.maxGenerations}}
-                </progressbar>
-            </div>
-        </div>
         <div ng-show="!pageState.solverStatus.running || !equivalentSequence()">
             <h5>{{ 'SOLVER_RESULT' | translate }}
                 <small ng-show="equivalentSequence()">{{ 'NO_CHANGE' | translate }}</small>
