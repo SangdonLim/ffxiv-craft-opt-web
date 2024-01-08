@@ -732,8 +732,8 @@ function MonteCarloSim(individual, synth, nRuns, assumeSuccess, verbose, debug, 
 
     var successRate = getSuccessRate(finalStateTracker);
 
-    logger.log('%-2s %20s %-5s %-5s %-8s %-5s %-5s','', '', 'DUR', 'CP', 'QUA', 'PRG', 'HQ%');
-    logger.log('%2s %-20s %5.0f %5.0f %8.1f %5.1f %5.1f', '##', 'Expected Value: ', avgDurability, avgCp, avgQuality, avgProgress, avgHqPercent);
+    logger.log('%-2s %20s %-5s %-5s %-8s %-6s %-6s','', '', 'DUR', 'CP', 'QUA', 'PRG', 'HQ%');
+    logger.log('%2s %-20s %5.0f %5.0f %8.1f %6.1f %6.1f', '##', 'Expected Value: ', avgDurability, avgCp, avgQuality, avgProgress, avgHqPercent);
 
     var mdnDurability = getMedianProperty(finalStateTracker, 'durabilityState', nRuns);
     var mdnCp = getMedianProperty(finalStateTracker, 'cpState', nRuns);
@@ -748,7 +748,7 @@ function MonteCarloSim(individual, synth, nRuns, assumeSuccess, verbose, debug, 
         hqPercent: mdnHqPercent
     };
 
-    logger.log('%2s %-20s %5.0f %5.0f %8.1f %5.1f %5.1f', '##', 'Median Value: ', mdnDurability, mdnCp, mdnQuality, mdnProgress, mdnHqPercent   );
+    logger.log('%2s %-20s %5.0f %5.0f %8.1f %6.1f %6.1f', '##', 'Median Value: ', mdnDurability, mdnCp, mdnQuality, mdnProgress, mdnHqPercent   );
 
     var minDurability = getMinProperty(finalStateTracker, 'durabilityState');
     var minCp = getMinProperty(finalStateTracker, 'cpState');
@@ -764,7 +764,7 @@ function MonteCarloSim(individual, synth, nRuns, assumeSuccess, verbose, debug, 
         hqPercent: minHqPercent
     };
 
-    logger.log('%2s %-20s %5.0f %5.0f %8.1f %5.1f %5.1f', '##', 'Min Value: ', minDurability, minCp, minQuality, minProgress, minHqPercent);
+    logger.log('%2s %-20s %5.0f %5.0f %8.1f %6.1f %6.1f', '##', 'Min Value: ', minDurability, minCp, minQuality, minProgress, minHqPercent);
 
     var maxDurability = getMaxProperty(finalStateTracker, 'durabilityState');
     var maxCp = getMaxProperty(finalStateTracker, 'cpState');
@@ -780,7 +780,7 @@ function MonteCarloSim(individual, synth, nRuns, assumeSuccess, verbose, debug, 
         hqPercent: maxHqPercent
     };
 
-    logger.log('%2s %-20s %5.0f %5.0f %8.1f %5.1f %5.1f', '##', 'Max Value: ', maxDurability, maxCp, maxQuality, maxProgress, maxHqPercent);
+    logger.log('%2s %-20s %5.0f %5.0f %8.1f %6.1f %6.1f', '##', 'Max Value: ', maxDurability, maxCp, maxQuality, maxProgress, maxHqPercent);
 
     logger.log('\n%2s %-20s %5.1f %%', '##', 'Success Rate: ', successRate);
 
