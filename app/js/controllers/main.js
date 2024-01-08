@@ -416,16 +416,12 @@
       $scope.sequence = [];
 
       $scope.sequenceSettings = {
-        maxTricksUses: 0,
         maxMontecarloRuns: 500,
         reliabilityPercent: 100,
         maxLengthEnabled: false,
         maxLength: 50,
         specifySeed: false,
         seed: 1337,
-        monteCarloMode: 'macro',
-        useConditions: false,
-        conditionalActionHandling: 'skipUnusable',
         debug: false
       };
 
@@ -466,22 +462,6 @@
 
       $scope.settings.name = state.settingsName;
       $scope.crafter.cls = state.crafterClass;
-
-      // Migrate settings
-      if ($scope.sequenceSettings.overrideOnCondition !== undefined) {
-        if ($scope.sequenceSettings.overrideOnCondition) {
-          $scope.sequenceSettings.monteCarloMode = 'advanced';
-          $scope.sequenceSettings.conditionalActionHandling = 'reposition';
-        }
-        else {
-          $scope.sequenceSettings.monteCarloMode = 'macro';
-          $scope.sequenceSettings.conditionalActionHandling = 'skipUnusable';
-        }
-
-        delete $scope.sequenceSettings.overrideOnCondition;
-
-        saveLocalPageState($scope);
-      }
 
       return true;
     }

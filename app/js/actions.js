@@ -1,4 +1,4 @@
-function Action(shortName, name, durabilityCost, cpCost, successProbability, qualityIncreaseMultiplier, progressIncreaseMultiplier, aType, activeTurns, level, onGood, onExcellent, onPoor) {
+function Action(shortName, name, durabilityCost, cpCost, successProbability, qualityIncreaseMultiplier, progressIncreaseMultiplier, aType, activeTurns, level) {
     this.shortName = shortName;
     this.name = name;
     this.durabilityCost = durabilityCost;
@@ -16,9 +16,7 @@ function Action(shortName, name, durabilityCost, cpCost, successProbability, qua
     }
 
     this.level = level;
-    this.onGood = onGood;
-    this.onExcellent = onExcellent;
-    this.onPoor = onPoor;
+
 }
 
 // Actions Table
@@ -26,8 +24,7 @@ function Action(shortName, name, durabilityCost, cpCost, successProbability, qua
 // parameters:
 //   shortName, name, durabilityCost, cpCost,
 //   successProbability, qualityIncreaseMultiplier, progressIncreaseMultiplier,
-//   aType, activeTurns, level,
-//   onGood, onExcl, onPoor
+//   aType, activeTurns, level
 var AllActions = {
     dummyAction: new Action(        'dummyAction',        '______________',       0,   0, 1.0,  0.0, 0.0, 'immediate', 1,  1),
     basicSynth: new Action(         'basicSynth',         'Basic Synthesis',     10,   0, 1.0,  0.0, 1.0, 'immediate', 1,  1),
@@ -36,7 +33,6 @@ var AllActions = {
     rapidSynthesis: new Action(     'rapidSynthesis',     'Rapid Synthesis',     10,   0, 0.5,  0.0, 2.5, 'immediate', 1,  9),
     hastyTouch: new Action(         'hastyTouch',         'Hasty Touch',         10,   0, 0.6,  1.0, 0.0, 'immediate', 1,  9),
     observe: new Action(            'observe',            'Observe',              0,   7, 1.0,  0.0, 0.0, 'immediate', 1, 13),
-    tricksOfTheTrade: new Action(   'tricksOfTheTrade',   'Tricks of the Trade',  0,   0, 1.0,  0.0, 0.0, 'immediate', 1, 13, true, true),
     wasteNot: new Action(           'wasteNot',           'Waste Not',            0,  56, 1.0,  0.0, 0.0, 'countdown', 4, 15),
     veneration: new Action(         'veneration',         'Veneration',           0,  18, 1.0,  0.0, 0.0, 'countdown', 4, 15),
     standardTouch: new Action(      'standardTouch',      'Standard Touch',      10,  32, 1.0, 1.25, 0.0, 'immediate', 1, 18),
@@ -45,7 +41,6 @@ var AllActions = {
     basicSynth2: new Action(        'basicSynth2',        'Basic Synthesis',     10,   0, 1.0,  0.0, 1.2, 'immediate', 1, 31),
     wasteNot2: new Action(          'wasteNot2',          'Waste Not II',         0,  98, 1.0,  0.0, 0.0, 'countdown', 8, 47),
     byregotsBlessing: new Action(   'byregotsBlessing',   'Byregot\'s Blessing', 10,  24, 1.0,  1.0, 0.0, 'immediate', 1, 50),
-    preciseTouch: new Action(       'preciseTouch',       'Precise Touch',       10,  18, 1.0,  1.5, 0.0, 'immediate', 1, 53, true, true),
     muscleMemory: new Action(       'muscleMemory',       'Muscle Memory',       10,   6, 1.0,  0.0, 3.0, 'countdown', 5, 54),
     carefulSynthesis: new Action(   'carefulSynthesis',   'Careful Synthesis',   10,   7, 1.0,  0.0, 1.5, 'immediate', 1, 62),
     rapidSynthesis2: new Action(    'rapidSynthesis2',    'Rapid Synthesis',     10,   0, 0.5,  0.0, 5.0, 'immediate', 1, 63),
@@ -57,7 +52,6 @@ var AllActions = {
     preparatoryTouch: new Action(   'preparatoryTouch',   'Preparatory Touch',   20,  40, 1.0,  2.0, 0.0, 'immediate', 1, 71),
     groundwork: new Action(         'groundwork',         'Groundwork',          20,  18, 1.0,  0.0, 3.0, 'immediate', 1, 72),
     delicateSynthesis: new Action(  'delicateSynthesis',  'Delicate Synthesis',  10,  32, 1.0,  1.0, 1.0, 'immediate', 1, 76),
-    intensiveSynthesis: new Action( 'intensiveSynthesis', 'Intensive Synthesis', 10,   6, 1.0,  0.0, 4.0, 'immediate', 1, 78, true, true),
     trainedEye: new Action(         'trainedEye',         'Trained Eye',         10, 250, 1.0,  0.0, 0.0, 'immediate', 1, 80),
     advancedTouch: new Action(      'advancedTouch',      'Advanced Touch',      10,  46, 1.0,  1.5, 0.0, 'immediate', 1, 84),
     prudentSynthesis: new Action(   'prudentSynthesis',   'Prudent Synthesis',    5,  18, 1.0,  0.0, 1.8, 'immediate', 1, 88),

@@ -19,7 +19,6 @@
     rapidSynthesis: {     useCrafterClassAgnosticIcon: true,            },
     hastyTouch: {         useCrafterClassAgnosticIcon: true,            },
     observe: {            useCrafterClassAgnosticIcon: true,            },
-    tricksOfTheTrade: {   useCrafterClassAgnosticIcon: true,            },
     wasteNot: {           useCrafterClassAgnosticIcon: true, buff: true },
     veneration: {         useCrafterClassAgnosticIcon: true, buff: true },
     standardTouch: {                                                    },
@@ -28,7 +27,6 @@
     basicSynth2: {                                                      },
     wasteNot2: {          useCrafterClassAgnosticIcon: true, buff: true },
     byregotsBlessing: {   useCrafterClassAgnosticIcon: true,            },
-    preciseTouch: {                                                     },
     muscleMemory: {       useCrafterClassAgnosticIcon: true,            },
     carefulSynthesis: {   useCrafterClassAgnosticIcon: true,            },
     rapidSynthesis2: {    useCrafterClassAgnosticIcon: true,            },
@@ -40,7 +38,6 @@
     preparatoryTouch: {                                                 },
     groundwork: {                                                       },
     delicateSynthesis: {                                                },
-    intensiveSynthesis: {                                               },
     trainedEye: {         useCrafterClassAgnosticIcon: true,            },
     advancedTouch: {                                                    },
     prudentSynthesis: {                                                 },
@@ -94,7 +91,6 @@
         "rapidSynthesis2",
         "focusedSynthesis",
         "groundwork",
-        "intensiveSynthesis",
         "prudentSynthesis"
       ]
     },
@@ -109,17 +105,11 @@
         "hastyTouch",
         "standardTouch",
         "byregotsBlessing",
-        "preciseTouch",
         "prudentTouch",
         "focusedTouch",
         "preparatoryTouch",
         "advancedTouch",
         "trainedFinesse"
-      ]
-    },
-    {
-      name: "CP", actions: [
-        "tricksOfTheTrade"
       ]
     },
     {

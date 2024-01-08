@@ -76,9 +76,7 @@ Recipe:\n\
   Max Quality: %d\n\
 \n\
 Settings:\n\
-  Max Tricks Uses: %d\n\
   Reliability: %d%%\n\
-  Use Conditions: %s\n\
   Algorithm: %s\n\
   Population: %d\n\
   Generations: %d\n\
@@ -97,9 +95,7 @@ Settings:\n\
     settings.recipe.durability,
     settings.recipe.startQuality,
     settings.recipe.maxQuality,
-    settings.maxTricksUses,
     settings.reliabilityPercent,
-    settings.useConditions ? "true" : "false",
     settings.algorithm,
     settings.solver.population,
     settings.solver.generations,
@@ -149,9 +145,7 @@ Settings:\n\
       settings.recipe.suggestedCraftsmanship, settings.recipe.suggestedControl,
       settings.recipe.progressDivider, settings.recipe.qualityDivider,
       settings.recipe.progressModifier, settings.recipe.qualityModifier);
-  var synth = new Synth(crafter, recipe, settings.maxTricksUses, settings.reliabilityPercent/100.0,
-    settings.useConditions, settings.maxLength);
-  var synthNoConditions = new Synth(crafter, recipe, settings.maxTricksUses, settings.reliabilityPercent/100.0, false,
+  var synth = new Synth(crafter, recipe, settings.reliabilityPercent/100.0,
     settings.maxLength);
 
   var sequence = [];
@@ -187,14 +181,14 @@ Settings:\n\
 
     logOutput.write('\n\n');
 
-    var states = MonteCarloSequence(sequence, NewStateFromSynth(synth), true, 'skipUnusable', false, settings.debug, logOutput);
+    var states = MonteCarloSequence(sequence, NewStateFromSynth(synth), true, false, settings.debug, logOutput);
     var heuristcState = states[states.length-1];
 
     var chk = heuristcState.checkViolations();
-    var feasibility = chk.progressOk && chk.durabilityOk && chk.cpOk && chk.trickOk && chk.reliabilityOk;
+    var feasibility = chk.progressOk && chk.durabilityOk && chk.cpOk && chk.reliabilityOk;
 
     logOutput.write("Heuristic sequence feasibility:\n");
-    logOutput.write('Progress: %s, Durability: %s, CP: %s, Tricks: %s, Reliability: %s\n\n'.sprintf(chk.progressOk, chk.durabilityOk, chk.cpOk, chk.trickOk, chk.reliabilityOk));
+    logOutput.write('Progress: %s, Durability: %s, CP: %s, Reliability: %s\n\n'.sprintf(chk.progressOk, chk.durabilityOk, chk.cpOk, chk.reliabilityOk));
   }
 
   var seqMaxLength = Math.max(50, sequence.length);
@@ -253,7 +247,6 @@ Settings:\n\
     algorithm: algorithm,
     startTime: startTime,
     synth: synth,
-    synthNoConditions: synthNoConditions,
     pop: pop,
     toolbox: toolbox,
     hof: hof,
@@ -274,7 +267,7 @@ function runOneGen() {
     state.logOutput.write('%d: best fitness=[%s]  pop diversity=[%s]\n'.sprintf(state.gen, numArrayToString(fitness), numArrayToString(popDiversity)));
   }
 
-  postProgress(state.gen, state.maxGen, state.hof.entries[0], state.synthNoConditions);
+  postProgress(state.gen, state.maxGen, state.hof.entries[0], state.synth);
 }
 
 function finish() {
@@ -292,10 +285,10 @@ function finish() {
   });
 }
 
-function postProgress(gen, maxGen, best, synthNoConditions) {
-  var startState = NewStateFromSynth(synthNoConditions);
+function postProgress(gen, maxGen, best, synth) {
+  var startState = NewStateFromSynth(synth);
 
-  var states = MonteCarloSequence(best, startState, true, 'skipUnusable', false, false);
+  var states = MonteCarloSequence(best, startState, true, false, false);
   var currentState = states[states.length-1];
   var violations = currentState.checkViolations();
 
@@ -308,10 +301,9 @@ function postProgress(gen, maxGen, best, synthNoConditions) {
         durability: currentState.durabilityState,
         cp: currentState.cpState,
         progress: currentState.progressState,
-        hqPercent: hqPercentFromQuality(currentState.qualityState / synthNoConditions.recipe.maxQuality * 100),
-        feasible: violations.progressOk && violations.durabilityOk && violations.cpOk && violations.trickOk && violations.reliabilityOk,
+        hqPercent: hqPercentFromQuality(currentState.qualityState / synth.recipe.maxQuality * 100),
+        feasible: violations.progressOk && violations.durabilityOk && violations.cpOk && violations.reliabilityOk,
         violations: violations,
-        condition: currentState.condition,
         bonusMaxCp: currentState.bonusMaxCp
       },
       bestSequence: actionSequenceToShortNames(best)

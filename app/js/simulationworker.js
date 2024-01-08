@@ -54,13 +54,9 @@ function setupSim(settings) {
       settings.recipe.suggestedCraftsmanship, settings.recipe.suggestedControl,
       settings.recipe.progressDivider, settings.recipe.qualityDivider,
       settings.recipe.progressModifier, settings.recipe.qualityModifier);
-  var synth = new Synth(crafter, recipe, settings.maxTricksUses, settings.reliabilityPercent / 100.0,
-    settings.useConditions, 0);
-  var synthNoConditions = new Synth(crafter, recipe, settings.maxTricksUses, settings.reliabilityPercent / 100.0,
-    false, 0);
+  var synth = new Synth(crafter, recipe, settings.reliabilityPercent / 100.0, 0);
 
   var startState = NewStateFromSynth(synth);
-  var startStateNoConditions = NewStateFromSynth(synthNoConditions);
 
   var sequence = [];
 
@@ -71,7 +67,6 @@ function setupSim(settings) {
     seed: seed,
     synth: synth,
     startState: startState,
-    startStateNoConditions: startStateNoConditions,
     sequence: sequence
   };
 }
@@ -80,8 +75,6 @@ function runProbablisticSim(id, settings) {
   var sim = setupSim(settings);
 
   var logOutput = new LogOutput();
-
-  logOutput.write('Use Conditions: %s\n\n'.sprintf(sim.synth.useConditions));
 
   logOutput.write("Probabilistic Result\n");
   logOutput.write("====================\n");
@@ -103,17 +96,16 @@ function runMonteCarloSim(id, settings) {
 
   var logOutput = new LogOutput();
 
-  logOutput.write('Seed: %d, Use Conditions: %s\n\n'.sprintf(sim.seed, sim.synth.useConditions));
+  logOutput.write('Seed: %d\n\n'.sprintf(sim.seed));
 
   var monteCarloSimHeader = "Monte Carlo Result of " + settings.maxMontecarloRuns + " runs";
   logOutput.write(monteCarloSimHeader + "\n");
   logOutput.write("=".repeat(monteCarloSimHeader.length));
   logOutput.write("\n");
 
-  var mcSimResult = MonteCarloSim(sim.sequence, sim.synth, settings.maxMontecarloRuns, false, settings.conditionalActionHandling, false, settings.debug, logOutput);
+  var mcSimResult = MonteCarloSim(sim.sequence, sim.synth, settings.maxMontecarloRuns, false, false, settings.debug, logOutput);
 
-  // Don't use conditions for final state to avoid oscillating results in the simulation state UI
-  var states = MonteCarloSequence(sim.sequence, sim.startStateNoConditions, true, 'skipUnusable', false, false, logOutput);
+  var states = MonteCarloSequence(sim.sequence, sim.startState, true, false, false, logOutput);
   var finalState = states[states.length - 1];
 
   var violations = finalState.checkViolations();
@@ -131,9 +123,8 @@ function runMonteCarloSim(id, settings) {
         progress: finalState.progressState,
         successPercent: mcSimResult.successPercent,
         hqPercent: hqPercentFromQuality(finalState.qualityState / settings.recipe.maxQuality * 100),
-        feasible: violations.progressOk && violations.durabilityOk && violations.cpOk && violations.trickOk && violations.reliabilityOk,
+        feasible: violations.progressOk && violations.durabilityOk && violations.cpOk && violations.reliabilityOk,
         violations: violations,
-        condition: finalState.condition,
         effects: finalState.effects,
         lastStep: finalState.lastStep,
         bonusMaxCp: finalState.bonusMaxCp

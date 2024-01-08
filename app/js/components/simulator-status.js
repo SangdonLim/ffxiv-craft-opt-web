@@ -80,7 +80,6 @@
 
       if ($scope.status.state) {
         $scope.durability = $scope.status.state.durability;
-        $scope.condition = $scope.status.state.condition;
         $scope.progress = $scope.status.state.progress;
         $scope.quality = $scope.status.state.quality;
         $scope.cp = $scope.status.state.cp;
@@ -88,7 +87,6 @@
       }
       else {
         $scope.durability = $scope.recipe.durability;
-        $scope.condition = '';
         $scope.progress = 0;
         $scope.quality = 0;
         $scope.cp = $scope.stats.cp;
