@@ -1287,18 +1287,3 @@ var LevelTable = {
     89: 555,
     90: 560
 };
-
-// Test objects
-//cls, level, craftsmanship, control, craftPoints, actions
-/*
-var myWeaverActions = [basicSynth];
-var myWeaver = new Crafter('Weaver', 20, 119, 117, 243, false, myWeaverActions);
-var initiatesSlops = new Recipe(20,74,70,0,1053);
-var mySynth = new Synth(myWeaver, initiatesSlops, maxTrickUses=1, useConditions=true);
-var actionSequence = [innerQuiet, steadyHand, wasteNot, basicSynth, hastyTouch, hastyTouch, hastyTouch, steadyHand, hastyTouch, tricksOfTheTrade, standardTouch, standardTouch, standardTouch, tricksOfTheTrade, rumination, mastersMend, hastyTouch, basicSynth, basicTouch, basicSynth];
-
-simSynth(actionSequence, mySynth, false, true);
-MonteCarloSynth(actionSequence, mySynth, false, true);
-MonteCarloSim(actionSequence, mySynth, 500);
-evalSeq(actionSequence, mySynth, 120);
-*/
