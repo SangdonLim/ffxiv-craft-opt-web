@@ -432,15 +432,15 @@ function ApplySpecialActionEffects(s, action) {
         delete s.effects.countDowns[AllActions.greatStrides.shortName];
     }
 
-    if (isActionEq(action, AllActions.veneration.shortName) && (AllActions.veneration.shortName in s.effects.countDowns)) {
-        s.wastedActions += 1
+    if (isActionEq(action, AllActions.veneration) && ('veneration' in s.effects.countDowns)) {
+        s.wastedActions += 1;
     }
-    if (isActionEq(action, AllActions.innovation.shortName) && (AllActions.innovation.shortName in s.effects.countDowns)) {
-        s.wastedActions += 1
+    if (isActionEq(action, AllActions.innovation) && ('innovation' in s.effects.countDowns)) {
+        s.wastedActions += 1;
     }
 
     if (action.isBuff) {
-        s.buffUses += 1
+        s.buffUses += 1;
     }
 
 }
@@ -485,12 +485,7 @@ function UpdateEffectCounters(s, action, successProbability, qualityGain) {
     }
 
     if (action.type === 'countdown') {
-        if (action.shortName === AllActions.muscleMemory.shortName && s.step != 1) {
-            s.wastedActions += 1;
-        }
-        else {
-            s.effects.countDowns[action.shortName] = action.activeTurns;
-        }
+        s.effects.countDowns[action.shortName] = action.activeTurns;
     }
 }
 
