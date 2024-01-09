@@ -43,6 +43,8 @@
   "ERROR_SYNTH_INVALID": "Error: Invalid synth sequence.",
   "EXECUTION_LOG": "Execution Log",
   "EXPORT_SEQUENCE": "Export Sequence",
+  "EXTRA_MACRO_INFO": "In-game command lines to add to the start of each macro.",
+  "EXTRA_MACRO": "Extra macro",
   "FINISH_SOUND_EFFECT": "Finish Sound Effect",
   "FINISH_SOUND_INFO": "Sound effect to play at the end of the last macro.,",
   "FOOD_NONE": "None",

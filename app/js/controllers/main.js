@@ -436,7 +436,8 @@
         buffWaitTime: 2,
         stepSoundEnabled: true,
         stepSoundEffect: 1,
-        finishSoundEffect: 14
+        finishSoundEffect: 14,
+        extraMacro: ''
       };
     }
 

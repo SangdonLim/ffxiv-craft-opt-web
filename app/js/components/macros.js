@@ -104,7 +104,12 @@
 
       if (options.includeMacroLock) {
         macroString += '/macrolock\n';
-          macroLineCount++;
+        macroLineCount++;
+      }
+
+      if (options.extraMacro !== '') {
+        macroString += options.extraMacro + '\n';
+        macroLineCount++;
       }
 
       for (var j = 0; j < lines.length; j++) {
@@ -127,6 +132,11 @@
               macroString += '/macrolock\n';
               macroLineCount++;
             }
+            if (options.extraMacro !== '') {
+              macroString += options.extraMacro + '\n';
+              macroLineCount++;
+            }
+
           }
         }
       }

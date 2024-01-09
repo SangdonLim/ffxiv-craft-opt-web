@@ -159,14 +159,21 @@
 
             <div class="row-fluid">
               <div class="span12">
+
+                <label class="checkbox" tooltip="{{ 'MACRO_LOCK_INFO' | translate }}" tooltip-placement="top">
+                  <input type="checkbox" name="includeMacroLock" ng-model="macroOptions.includeMacroLock"/>
+                  {{ 'MACRO_INCLUDE_LOCK' | translate }}
+                </label>
+
                 <div class="control-group">
+                  <label class="control-label">{{ 'EXTRA_MACRO' | translate }}</label>
                   <div class="controls">
-                    <label class="checkbox" tooltip="{{ 'MACRO_LOCK_INFO' | translate }}" tooltip-placement="top">
-                      <input type="checkbox" name="includeMacroLock" ng-model="macroOptions.includeMacroLock"/>
-                      {{ 'MACRO_INCLUDE_LOCK' | translate }}
-                    </label>
+                    <input id="macros.extraMacro" class="input" type="text"
+                           ng-model="macroOptions.extraMacro"
+                           tooltip="{{ 'EXTRA_MACRO_INFO' | translate }}" tooltip-placement="right"/>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
