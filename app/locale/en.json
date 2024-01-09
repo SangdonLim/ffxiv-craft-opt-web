@@ -112,8 +112,6 @@
   "SOLVER_RESULT": "Solver Result",
   "SOLVER_START": "Start",
   "SOLVER_STOP": "Stop",
-  "SPECIALIST_DESC": "Check this if you have the Stroke of Genius trait from the level 70 quest.",
-  "SPECIALIST": "Specialist",
   "SPECIFY_SEED_INFO": "Enable to override the random seed used for Monte Carlo simulations.",
   "SPECIFY_SEED": "Specify Seed",
   "STATS_CONTROL": "Control",

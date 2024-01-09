@@ -62,7 +62,6 @@ Crafter:\n\
   Craftsmanship: %d\n\
   Control: %d\n\
   CP: %d\n\
-  Specialist: %s\n\
 \n\
 Recipe:\n\
   Level: %d\n\
@@ -85,7 +84,6 @@ Settings:\n\
     settings.crafter.craftsmanship,
     settings.crafter.control,
     settings.crafter.cp,
-    settings.crafter.specialist ? "true" : "false",
     settings.recipe.level,
     settings.recipe.difficulty,
     settings.recipe.durability,
@@ -134,7 +132,6 @@ Settings:\n\
                             settings.crafter.craftsmanship,
                             settings.crafter.control,
                             settings.crafter.cp,
-                            settings.crafter.specialist,
                             crafterActions);
   var recipe = new Recipe(settings.recipe.baseLevel, settings.recipe.level, settings.recipe.difficulty,
       settings.recipe.durability, settings.recipe.startQuality, settings.recipe.maxQuality,

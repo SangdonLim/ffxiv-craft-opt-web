@@ -47,7 +47,6 @@ function setupSim(settings) {
     settings.crafter.craftsmanship,
     settings.crafter.control,
     settings.crafter.cp,
-    settings.crafter.specialist,
     crafterActions);
   var recipe = new Recipe(settings.recipe.baseLevel, settings.recipe.level, settings.recipe.difficulty,
       settings.recipe.durability, settings.recipe.startQuality, settings.recipe.maxQuality,

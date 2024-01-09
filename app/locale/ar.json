@@ -111,8 +111,6 @@
   "SOLVER_RESULT": "حل المجيب",
   "SOLVER_START": "البدء",
   "SOLVER_STOP": "التوقف",
-  "SPECIALIST_DESC": "تحقق هذا إذا كان لديك سمة الذكاء من مستوى 70 مهمة",
-  "SPECIALIST": "متخصص",
   "SPECIFY_SEED_INFO": "تمكن من تجاوز البذور العشوائية المستخدمة لمحاكاة مونت كارلو.",
   "SPECIFY_SEED": "تحديد البذور",
   "STATS_CONTROL": "التحكم",

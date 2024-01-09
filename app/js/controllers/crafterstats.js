@@ -16,16 +16,6 @@
     $scope.selectActionsByLevel = selectActionsByLevel;
     $scope.selectActionsGuaranteed = selectActionsGuaranteed;
 
-    // Keep list of specialist actions
-    var specialistActions = [];
-    for (var i = 0; i < _actionGroups.length; i++) {
-      var group = _actionGroups[i];
-      if (group.name === "Specialist") {
-        specialistActions = group.actions;
-        break;
-      }
-    }
-
     // Initialize tab names and initial active state
     $scope.tabs = [];
     for (var i = 0; i < _allClasses.length; i++) {
@@ -147,11 +137,6 @@
         for (var j = 0; j < actions.length; j++) {
           var action = _actionsByName[actions[j]];
           var actionClass = cls;
-
-          // Skip specialist actions if the class is not marked as a specialist
-          if (specialistActions.indexOf(action.shortName) >= 0 && !$scope.crafter.stats[actionClass].specialist) {
-            continue;
-          }
 
           // If we care about level and the action's level is too high, skip it.
           if (action.level > $scope.crafter.stats[actionClass].level) continue;

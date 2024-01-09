@@ -36,13 +36,12 @@ Logger.prototype.log = function(myString) {
     }
 };
 
-function Crafter(cls, level, craftsmanship, control, craftPoints, specialist, actions) {
+function Crafter(cls, level, craftsmanship, control, craftPoints, actions) {
     this.cls = cls;
     this.craftsmanship = craftsmanship;
     this.control = control;
     this.craftPoints = craftPoints;
     this.level = level;
-    this.specialist = specialist;
     if (actions === null) {
         this.actions = [];
     }
@@ -259,6 +258,37 @@ function ApplyModifiers(s, action) {
         }
     }
 
+    // Specialist actions
+    if (isActionEq(action, AllActions.heartAndSoul)) {
+        if (s.effects.countUps['heartAndSoulUsed'] == 1) {
+            s.cpState = -9999;
+        }
+    }
+    if (isActionEq(action, AllActions.preciseTouch)) {
+        if (!(AllActions.heartAndSoul.shortName in s.effects.countDowns)) {
+            s.cpState = -9999;
+        }
+        if (AllActions.heartAndSoul.shortName in s.effects.countDowns) {
+            delete s.effects.countDowns[AllActions.heartAndSoul.shortName];
+        }
+    }
+    if (isActionEq(action, AllActions.intensiveSynthesis)) {
+        if (!(AllActions.heartAndSoul.shortName in s.effects.countDowns)) {
+            s.cpState = -9999;
+        }
+        if (AllActions.heartAndSoul.shortName in s.effects.countDowns) {
+            delete s.effects.countDowns[AllActions.heartAndSoul.shortName];
+        }
+    }
+    if (isActionEq(action, AllActions.tricksOfTheTrade)) {
+        if (!(AllActions.heartAndSoul.shortName in s.effects.countDowns)) {
+            s.cpState = -9999;
+        }
+        if (AllActions.heartAndSoul.shortName in s.effects.countDowns) {
+            delete s.effects.countDowns[AllActions.heartAndSoul.shortName];
+        }
+    }
+
     // Effects modifying durability cost
     var durabilityCost = action.durabilityCost;
     if ((AllActions.wasteNot.shortName in s.effects.countDowns) || (AllActions.wasteNot2.shortName in s.effects.countDowns)) {
@@ -373,6 +403,10 @@ function ApplySpecialActionEffects(s, action) {
         s.durabilityState += 30;
     }
 
+    if (isActionEq(action, AllActions.tricksOfTheTrade)) {
+        s.cpState += 20;
+    }
+
     if ((AllActions.manipulation.shortName in s.effects.countDowns) && (s.durabilityState > 0) && !isActionEq(action, AllActions.manipulation)) {
         s.durabilityState += 5;
     }
@@ -433,8 +467,16 @@ function UpdateEffectCounters(s, action, successProbability, qualityGain) {
         if (isActionEq(action, AllActions.preparatoryTouch)) {
             s.effects.countUps['innerQuiet'] += 1;
         }
+        if (isActionEq(action, AllActions.preciseTouch)) {
+            s.effects.countUps['innerQuiet'] += 1;
+        }
         // Cap inner quiet stacks at 10
         s.effects.countUps['innerQuiet'] = Math.min(s.effects.countUps['innerQuiet'], 10);
+    }
+
+    // Limit heart and soul to one per sequence
+    if (isActionEq(action, AllActions.heartAndSoul)) {
+        s.effects.countUps['heartAndSoulUsed'] = 1;
     }
 
     // Initialize new effects after countdowns are managed to reset them properly
@@ -1139,6 +1181,11 @@ function heuristicSequenceBuilder(synth) {
     subSeq1 = [];
     subSeq2 = [];
     subSeq3 = [];
+
+    // start with specialist actions if available
+    if (tryAction('heartAndSoul')) {
+        pushAction(subSeq1, 'heartAndSoul');
+    }
 
     /* Improve Quality
      -- Reflect and Inner Quiet at start

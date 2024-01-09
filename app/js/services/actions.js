@@ -19,6 +19,7 @@
     rapidSynthesis: {     useCrafterClassAgnosticIcon: true,            },
     hastyTouch: {         useCrafterClassAgnosticIcon: true,            },
     observe: {            useCrafterClassAgnosticIcon: true,            },
+    tricksOfTheTrade: {   useCrafterClassAgnosticIcon: true,            },
     wasteNot: {           useCrafterClassAgnosticIcon: true, buff: true },
     veneration: {         useCrafterClassAgnosticIcon: true, buff: true },
     standardTouch: {                                                    },
@@ -27,6 +28,7 @@
     finalAppraisal: {     useCrafterClassAgnosticIcon: true, buff: true },
     wasteNot2: {          useCrafterClassAgnosticIcon: true, buff: true },
     byregotsBlessing: {   useCrafterClassAgnosticIcon: true,            },
+    preciseTouch: {                                                     },
     muscleMemory: {       useCrafterClassAgnosticIcon: true,            },
     carefulSynthesis: {   useCrafterClassAgnosticIcon: true,            },
     manipulation: {       useCrafterClassAgnosticIcon: true, buff: true },
@@ -37,8 +39,10 @@
     preparatoryTouch: {                                                 },
     groundwork: {                                                       },
     delicateSynthesis: {                                                },
+    intensiveSynthesis: {                                               },
     trainedEye: {         useCrafterClassAgnosticIcon: true,            },
     advancedTouch: {                                                    },
+    heartAndSoul: {       useCrafterClassAgnosticIcon: true, buff: true },
     prudentSynthesis: {                                                 },
     trainedFinesse: {     useCrafterClassAgnosticIcon: true,            }
   };
@@ -122,6 +126,14 @@
         "veneration",
         "greatStrides",
         "innovation",
+    ]
+    },
+    {
+      name: "Specialist (requires consumables)", actions: [
+        "tricksOfTheTrade",
+        "preciseTouch",
+        "intensiveSynthesis",
+        "heartAndSoul",
     ]
     },
     {
