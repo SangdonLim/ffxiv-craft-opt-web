@@ -92,12 +92,8 @@
         "carefulSynthesis",
         "focusedSynthesis",
         "groundwork",
+        "delicateSynthesis",
         "prudentSynthesis"
-      ]
-    },
-    {
-      name: "Synthesis + Quality", actions: [
-        "delicateSynthesis"
       ]
     },
     {
@@ -109,6 +105,7 @@
         "prudentTouch",
         "focusedTouch",
         "preparatoryTouch",
+        "delicateSynthesis",
         "advancedTouch",
         "trainedFinesse"
       ]
