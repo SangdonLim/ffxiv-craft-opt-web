@@ -24,6 +24,7 @@
     standardTouch: {                                                    },
     greatStrides: {       useCrafterClassAgnosticIcon: true, buff: true },
     innovation: {         useCrafterClassAgnosticIcon: true, buff: true },
+    finalAppraisal: {     useCrafterClassAgnosticIcon: true, buff: true },
     wasteNot2: {          useCrafterClassAgnosticIcon: true, buff: true },
     byregotsBlessing: {   useCrafterClassAgnosticIcon: true,            },
     muscleMemory: {       useCrafterClassAgnosticIcon: true,            },
@@ -125,7 +126,8 @@
     },
     {
       name: "Other", actions: [
-        "observe"
+        "observe",
+        "finalAppraisal"
     ]
     }
   ];

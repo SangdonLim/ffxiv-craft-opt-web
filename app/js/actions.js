@@ -38,6 +38,7 @@ var AllActions = {
     standardTouch: new Action(      'standardTouch',      'Standard Touch',      10,  32, 1.0, 1.25, 0.0, 'immediate', 1, 18),
     greatStrides: new Action(       'greatStrides',       'Great Strides',        0,  32, 1.0,  0.0, 0.0, 'countdown', 3, 21),
     innovation: new Action(         'innovation',         'Innovation',           0,  18, 1.0,  0.0, 0.0, 'countdown', 4, 26),
+    finalAppraisal: new Action(     'finalAppraisal',     'Final Appraisal',      0,   1, 1.0,  0.0, 0.0, 'countdown', 5, 42),
     wasteNot2: new Action(          'wasteNot2',          'Waste Not II',         0,  98, 1.0,  0.0, 0.0, 'countdown', 8, 47),
     byregotsBlessing: new Action(   'byregotsBlessing',   'Byregot\'s Blessing', 10,  24, 1.0,  1.0, 0.0, 'immediate', 1, 50),
     muscleMemory: new Action(       'muscleMemory',       'Muscle Memory',       10,   6, 1.0,  0.0, 3.0, 'countdown', 5, 54),
@@ -55,4 +56,3 @@ var AllActions = {
     prudentSynthesis: new Action(   'prudentSynthesis',   'Prudent Synthesis',    5,  18, 1.0,  0.0, 1.8, 'immediate', 1, 88),
     trainedFinesse: new Action(     'trainedFinesse',     'Trained Finesse',      0,  32, 1.0,  1.0, 0.0, 'immediate', 1, 90)
 };
-

@@ -338,6 +338,16 @@ function ApplyModifiers(s, action) {
         }
     }
 
+    // Final Appraisal
+    if (('finalAppraisal' in s.effects.countDowns) && s.effects.countDowns['finalAppraisal'] > 0) {
+        if (bProgressGain > 0) {
+            if (s.progressState + bProgressGain >= s.synth.recipe.difficulty) {
+                delete s.effects.countDowns['finalAppraisal'];
+                bProgressGain = s.synth.recipe.difficulty - s.progressState - 1;
+            }
+        }
+    }
+
     return {
         craftsmanship: craftsmanship,
         control: control,
