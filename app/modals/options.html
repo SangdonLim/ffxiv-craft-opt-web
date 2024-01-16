@@ -29,12 +29,12 @@
             <div class="span6">
 
               <div class="control-group" ng-class="{error: solverOptionsForm.reliabilityPercent.$invalid}">
-                <label class="control-label">{{ 'RELIABILITY_OPTIONS' | translate }}</label>
+                <label class="control-label">{{ 'TARGET_SUCCESS_RATE_OPTIONS' | translate }}</label>
 
                 <div class="controls">
                   <input class="input-small" type="number" name="reliabilityPercent"
                          ng-model="sequenceSettings.reliabilityPercent" min="1" max="100" required
-                         tooltip="{{ 'RELIABILITY_INFO' | translate }}"
+                         tooltip="{{ 'TARGET_SUCCESS_RATE_INFO' | translate }}"
                          tooltip-placement="right"/>
                 </div>
               </div>
