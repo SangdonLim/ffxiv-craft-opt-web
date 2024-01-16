@@ -25,6 +25,16 @@
                 </div>
               </div>
 
+              <div class="control-group" ng-class="{error: solverOptionsForm.population.$invalid}">
+                <label class="control-label">{{ 'POPULATION_OPTIONS' | translate }}</label>
+
+                <div class="controls">
+                  <input class="input-small" type="number" name="population" ng-model="solver.population" min="1" required
+                         tooltip="{{ 'POPULATION_INFO' | translate }}"
+                         tooltip-placement="left"/>
+                </div>
+              </div>
+
               <div class="control-group" ng-class="{error: solverOptionsForm.reliabilityPercent.$invalid}">
                 <label class="control-label">{{ 'TARGET_SUCCESS_RATE_OPTIONS' | translate }}</label>
 
@@ -38,16 +48,6 @@
 
             </div>
             <div class="span6">
-
-              <div class="control-group" ng-class="{error: solverOptionsForm.population.$invalid}">
-                <label class="control-label">{{ 'POPULATION_OPTIONS' | translate }}</label>
-
-                <div class="controls">
-                  <input class="input-small" type="number" name="population" ng-model="solver.population" min="1" required
-                         tooltip="{{ 'POPULATION_INFO' | translate }}"
-                         tooltip-placement="left"/>
-                </div>
-              </div>
 
               <div class="control-group" ng-class="{error: solverOptionsForm.generations.$invalid}">
                 <label class="control-label">{{ 'GENERATIONS_OPTIONS' | translate }}</label>
