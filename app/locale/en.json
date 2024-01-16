@@ -123,6 +123,8 @@
   "STEP_SOUND_INFO": "Sound effect to play at the end of each macro, except the last.,",
   "SUCCESS_RATE": "Success Rate",
   "SYNTH_SEQUENCE_CODE": "Synth sequence code: ",
+  "TARGET_HQ_PERCENT_INFO": "Target HQ rate is the desired probability that the crafting sesion will yield product items as HQ variants.",
+  "TARGET_HQ_PERCENT_OPTIONS": "Target HQ rate (%):",
   "TARGET_SUCCESS_RATE_INFO": "Target success rate is the desired probability that the crafting session will complete and yield recipe product items. Lowering this value will allow the solver to find sequences that may produce higher quality but with higher chances of the crafting session ending in a failure.",
   "TARGET_SUCCESS_RATE_OPTIONS": "Target success rate (%):",
   "UNNAMED": "unnamed",
