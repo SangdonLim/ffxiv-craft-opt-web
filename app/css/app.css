@@ -269,6 +269,10 @@ div[content*="actiontooltip"] div.tooltip-inner {
   text-align: left;
 }
 
+.tooltip-inner {
+  text-align: left;
+}
+
 .action-tooltip-title {
   font-size: large;
   font-weight: bold;
