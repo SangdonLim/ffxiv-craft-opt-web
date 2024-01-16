@@ -12,6 +12,19 @@
           <div class="row-fluid">
             <div class="span6">
 
+              <div class="control-group" ng-class="{error: solverOptionsForm.algorithm.$invalid}">
+                <label class="control-label">{{ 'ALGORITHM_OPTIONS' | translate }}</label>
+                <div class="controls">
+                  <select class="input-medium" name="algorithm"
+                          ng-model="solver.algorithm" required
+                          tooltip="{{ 'ALGORITHM_INFO' | translate }}"
+                          tooltip-placement="left">
+                    <option>eaSimple</option>
+                    <option>eaComplex</option>
+                  </select>
+                </div>
+              </div>
+
               <div class="control-group" ng-class="{error: solverOptionsForm.reliabilityPercent.$invalid}">
                 <label class="control-label">{{ 'TARGET_SUCCESS_RATE_OPTIONS' | translate }}</label>
 
@@ -25,19 +38,6 @@
 
             </div>
             <div class="span6">
-
-              <div class="control-group" ng-class="{error: solverOptionsForm.algorithm.$invalid}">
-                <label class="control-label">{{ 'ALGORITHM_OPTIONS' | translate }}</label>
-
-                <div class="controls">
-                  <select class="input-medium" name="algorithm" ng-model="solver.algorithm" required
-                          tooltip="{{ 'ALGORITHM_INFO' | translate }}"
-                          tooltip-placement="left">
-                    <option>eaSimple</option>
-                    <option>eaComplex</option>
-                  </select>
-                </div>
-              </div>
 
               <div class="control-group" ng-class="{error: solverOptionsForm.population.$invalid}">
                 <label class="control-label">{{ 'POPULATION_OPTIONS' | translate }}</label>
