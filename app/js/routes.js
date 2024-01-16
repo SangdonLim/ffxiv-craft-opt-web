@@ -48,10 +48,6 @@
         params: {
           autoStart: null
         }
-      })
-      .state('about', {
-        url: '/about',
-        templateUrl: 'views/about.html'
       });
   }
 })();
