@@ -18,7 +18,7 @@
                   <select class="input-medium" name="algorithm"
                           ng-model="solver.algorithm" required
                           tooltip="{{ 'ALGORITHM_INFO' | translate }}"
-                          tooltip-placement="left">
+                          tooltip-placement="right">
                     <option>eaSimple</option>
                     <option>eaComplex</option>
                   </select>
@@ -31,7 +31,7 @@
                 <div class="controls">
                   <input class="input-small" type="number" name="population" ng-model="solver.population" min="1" required
                          tooltip="{{ 'POPULATION_INFO' | translate }}"
-                         tooltip-placement="left"/>
+                         tooltip-placement="right"/>
                 </div>
               </div>
 
@@ -41,7 +41,7 @@
                 <div class="controls">
                   <input class="input-small" type="number" name="generations" ng-model="solver.generations" min="1" required
                          tooltip="{{ 'GENERATIONS_INFO' | translate }}"
-                         tooltip-placement="left"/>
+                         tooltip-placement="right"/>
                 </div>
               </div>
 
@@ -55,7 +55,7 @@
                   <input class="input-small" type="number" name="reliabilityPercent"
                          ng-model="sequenceSettings.reliabilityPercent" min="1" max="100" required
                          tooltip="{{ 'TARGET_SUCCESS_RATE_INFO' | translate }}"
-                         tooltip-placement="right"/>
+                         tooltip-placement="left"/>
                 </div>
               </div>
 
